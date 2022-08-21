@@ -72,37 +72,37 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'introSidebar',
           },
-          {
-            label: '编程基础',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'program_basics',
-          },
+          // {
+          //   label: '编程基础',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'program_basics',
+          // },
           // node
-          {
-            label: 'node.js',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'node',
-          },
-          {
-            label: 'typescript',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'ts',
-          },
+          // {
+          //   label: 'node.js',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'node',
+          // },
+          // {
+          //   label: 'typescript',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'ts',
+          // },
           {
             label: 'rust',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'rust',
           },
-          {
-            label: 'go',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'go',
-          },
+          // {
+          //   label: 'go',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'go',
+          // },
           {
             label: 'solidity',
             position: 'left',

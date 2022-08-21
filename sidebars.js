@@ -32,46 +32,46 @@ const sidebars = {
       'intro',
   ],
   // 编程基础
-  program_basics: [
-    'program_basics/info',
-    {
-      label: '数据结构',
-      type: 'category',
-      items: [
-        'program_basics/data_structures/info',
-      ]
-    },
-    {
-      label: '算法',
-      type: 'category',
-      items: [
-        'program_basics/algorithms/info',
-      ]
-    },
-    {
-      label: '操作系统',
-      type: 'category',
-      items: [
-        'program_basics/os/info',
-      ]
-    },
-    {
-      label: '计算机网络',
-      type: 'category',
-      items: [
-        'program_basics/network/info',
-      ]
-    },
-  ],
+  // program_basics: [
+  //   'program_basics/info',
+  //   {
+  //     label: '数据结构',
+  //     type: 'category',
+  //     items: [
+  //       'program_basics/data_structures/info',
+  //     ]
+  //   },
+  //   {
+  //     label: '算法',
+  //     type: 'category',
+  //     items: [
+  //       'program_basics/algorithms/info',
+  //     ]
+  //   },
+  //   {
+  //     label: '操作系统',
+  //     type: 'category',
+  //     items: [
+  //       'program_basics/os/info',
+  //     ]
+  //   },
+  //   {
+  //     label: '计算机网络',
+  //     type: 'category',
+  //     items: [
+  //       'program_basics/network/info',
+  //     ]
+  //   },
+  // ],
 
-  // node
-  node : [
-      'node/info',
-  ],
-  // ts
-  ts : [
-    'ts/info',
-  ],
+  // // node
+  // node : [
+  //     'node/info',
+  // ],
+  // // ts
+  // ts : [
+  //   'ts/info',
+  // ],
 
   // rust
   rust : [
@@ -87,10 +87,12 @@ const sidebars = {
         'rust/rust基础知识/结构体',
         'rust/rust基础知识/枚举',
         'rust/rust基础知识/数组',
+        'rust/rust基础知识/动态数组',
+        'rust/rust基础知识/键值对',
         'rust/rust基础知识/类型转换',
         'rust/rust基础知识/变量绑定与解构',
         'rust/rust基础知识/所有权',
-        'rust/rust基础知识/引用与借用',
+        'rust/rust基础知识/借用',
         'rust/rust基础知识/生命周期',
         'rust/rust基础知识/流程控制',
         'rust/rust基础知识/模式匹配',
@@ -98,7 +100,6 @@ const sidebars = {
         'rust/rust基础知识/方法',
         'rust/rust基础知识/泛型',
         'rust/rust基础知识/特征',
-        'rust/rust基础知识/集合类型',
         'rust/rust基础知识/错误处理',
         'rust/rust基础知识/包和模块',
         'rust/rust基础知识/注释和文档',
@@ -341,6 +342,7 @@ const sidebars = {
   // blockchain
   blockchain : [
     'blockchain/info',
+    'blockchain/aptos',
   ],
 };
 
