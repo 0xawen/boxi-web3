@@ -117,6 +117,7 @@ const sidebars = {
         'rust/rust进阶知识/深入类型系统/newtype和类型别名',
         'rust/rust进阶知识/深入类型系统/sized和不定长类型DST',
         'rust/rust进阶知识/深入类型系统/枚举和整数',
+        'rust/rust进阶知识/智能指针/Box堆分配对象',
       ]
     },
     {
