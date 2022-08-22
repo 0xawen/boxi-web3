@@ -110,14 +110,15 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/rust进阶知识/info',
-        'rust/rust进阶知识/函数式编程/迭代器',
-        'rust/rust进阶知识/函数式编程/闭包',
-        'rust/rust进阶知识/生命周期/深入生命周期',
-        'rust/rust进阶知识/生命周期/static的生命周期',
         'rust/rust进阶知识/深入类型系统/newtype和类型别名',
         'rust/rust进阶知识/深入类型系统/sized和不定长类型DST',
         'rust/rust进阶知识/深入类型系统/枚举和整数',
+        'rust/rust进阶知识/函数式编程/迭代器',
+        'rust/rust进阶知识/函数式编程/闭包',
         'rust/rust进阶知识/智能指针/Box堆分配对象',
+        'rust/rust进阶知识/智能指针/Deref解引用',
+        'rust/rust进阶知识/生命周期/深入生命周期',
+        'rust/rust进阶知识/生命周期/static的生命周期',
       ]
     },
     {
