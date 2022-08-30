@@ -1,17 +1,21 @@
-# web3
+# 目标
 
-这里主要收集记录了关于智能合约的内容，大概可以分为:
-- solidity
-- rust_smart_contrct
-- move
 
-阅读的时候，可以选择自己感兴趣的主题。后期更新内容待定...
+这里是沉淀编程知识的地方，同时也是自己的一个web3知识库。(其实就是一个知识搬运工)
 
-在线阅读:
-- http://boxismartcontracts.com/
 
-## 目标
+我的目标是： 能cv就绝不使用搜索引擎。
 
-智能合约开发 --- 这是这个仓库建立的初衷。 
+- 编程基础 programing basics
 
-这个仓库目前是在做一个智能合约领域的开发知识库，通过本仓库可以学习到合约开发的基础。
+- web前端 front web basic
+
+- web后端 backend web basic
+
+- 合约 solidity
+
+- 合约 rust contract
+
+- 合约 move
+
+- 链 blockchain

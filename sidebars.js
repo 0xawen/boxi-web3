@@ -29,40 +29,50 @@ const sidebars = {
 
   // 前言
   introSidebar :[
+      '编程',
       'intro',
   ],
   // 编程基础
-  // program_basics: [
-  //   'program_basics/info',
-  //   {
-  //     label: '数据结构',
-  //     type: 'category',
-  //     items: [
-  //       'program_basics/data_structures/info',
-  //     ]
-  //   },
-  //   {
-  //     label: '算法',
-  //     type: 'category',
-  //     items: [
-  //       'program_basics/algorithms/info',
-  //     ]
-  //   },
-  //   {
-  //     label: '操作系统',
-  //     type: 'category',
-  //     items: [
-  //       'program_basics/os/info',
-  //     ]
-  //   },
-  //   {
-  //     label: '计算机网络',
-  //     type: 'category',
-  //     items: [
-  //       'program_basics/network/info',
-  //     ]
-  //   },
-  // ],
+  program_basics: [
+    'program_basics/info',
+    {
+      label: '操作系统',
+      type: 'category',
+      items: [
+        'program_basics/os/info',
+        'program_basics/os/进程管理',
+        'program_basics/os/存储管理',
+        'program_basics/os/文件管理',
+        'program_basics/os/设备管理',
+        'program_basics/os/作业管理',
+      ]
+    },
+    {
+      label: '计算机网络',
+      type: 'category',
+      items: [
+        'program_basics/network/info',
+        'program_basics/network/tcp',
+        'program_basics/network/udp',
+      ]
+    },
+    {
+      label: '数据结构',
+      type: 'category',
+      items: [
+        'program_basics/data_structures/info',
+        'program_basics/data_structures/linked',
+      ]
+    },
+    {
+      label: '算法',
+      type: 'category',
+      items: [
+        'program_basics/algorithms/info',
+      ]
+    },
+
+  ],
 
   // // node
   // node : [
@@ -81,19 +91,22 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/rust基础知识/内存-栈与堆',
-        'rust/rust基础知识/基本类型',
-        'rust/rust基础知识/字符串与切片',
-        'rust/rust基础知识/元组',
-        'rust/rust基础知识/结构体',
-        'rust/rust基础知识/枚举',
-        'rust/rust基础知识/数组',
-        'rust/rust基础知识/动态数组',
-        'rust/rust基础知识/键值对',
-        'rust/rust基础知识/类型转换',
-        'rust/rust基础知识/变量绑定与解构',
         'rust/rust基础知识/所有权',
         'rust/rust基础知识/借用',
         'rust/rust基础知识/生命周期',
+        'rust/rust基础知识/变量绑定与解构',
+        'rust/rust基础知识/数值类型',
+        'rust/rust基础知识/布尔类型',
+        'rust/rust基础知识/单元类型',
+        'rust/rust基础知识/字符类型',
+        'rust/rust基础知识/数组',
+        'rust/rust基础知识/元组',
+        'rust/rust基础知识/结构体',
+        'rust/rust基础知识/枚举',
+        'rust/rust基础知识/字符串与切片',
+        'rust/rust基础知识/动态数组',
+        'rust/rust基础知识/键值对',
+        'rust/rust基础知识/类型转换',
         'rust/rust基础知识/流程控制',
         'rust/rust基础知识/模式匹配',
         'rust/rust基础知识/函数',
@@ -110,8 +123,8 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/rust进阶知识/info',
-        'rust/rust进阶知识/深入类型系统/newtype和类型别名',
-        'rust/rust进阶知识/深入类型系统/sized和不定长类型DST',
+        'rust/rust进阶知识/深入类型系统/新类型和类型别名',
+        'rust/rust进阶知识/深入类型系统/定长类型和不定长类型',
         'rust/rust进阶知识/深入类型系统/枚举和整数',
         'rust/rust进阶知识/函数式编程/迭代器',
         'rust/rust进阶知识/函数式编程/闭包',
@@ -119,6 +132,27 @@ const sidebars = {
         'rust/rust进阶知识/智能指针/Deref解引用',
         'rust/rust进阶知识/生命周期/深入生命周期',
         'rust/rust进阶知识/生命周期/static的生命周期',
+        'rust/rust进阶知识/智能指针/Box堆分配对象',
+        'rust/rust进阶知识/智能指针/Deref解引用',
+        'rust/rust进阶知识/智能指针/Drop释放资源',
+        'rust/rust进阶知识/智能指针/Rc与Arc',
+        'rust/rust进阶知识/智能指针/Cell与RefCell',
+        'rust/rust进阶知识/全局变量',
+        'rust/rust进阶知识/错误处理',
+      ]
+    },
+    {
+      label: 'rust多线程编程',
+      type: 'category',
+      items: [
+        'rust/rust多线程并发编程/info',
+        'rust/rust多线程并发编程/多线程的使用',
+        'rust/rust多线程并发编程/线程同步_消息传递',
+        'rust/rust多线程并发编程/线程同步_锁',
+        'rust/rust多线程并发编程/线程同步_条件变量',
+        'rust/rust多线程并发编程/线程同步_信号量',
+        'rust/rust多线程并发编程/线程同步_原子操作',
+        'rust/rust多线程并发编程/基于Send和Sync的线程安全',
       ]
     },
     {
@@ -131,7 +165,24 @@ const sidebars = {
         'rust/cargo/cargo_条件编译',
         'rust/cargo/cargo配置格式',
       ]
-    }
+    },
+    {
+      label: 'rust测试',
+      type: 'category',
+      items: [
+        'rust/rust自动化测试/断言',
+        'rust/rust自动化测试/单元测试',
+        'rust/rust自动化测试/集成测试',
+        'rust/rust自动化测试/基准测试',
+      ]
+    },
+    {
+      label: 'rust常用开发库',
+      type: 'category',
+      items: [
+        'rust/rust开发库/info',
+      ]
+    },
   ],
 
   // go

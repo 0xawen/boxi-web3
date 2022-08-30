@@ -9,7 +9,7 @@ const beian = '粤IPC备2022098206'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '最优质的web3开发内容',
+  title: 'web3 blog',
   tagline: 'by boxi',
   url: 'http://boxismartcontracts.com',
   baseUrl: '/',
@@ -67,17 +67,17 @@ const config = {
         },
         items: [
           {
-            label: '前言',
+            label: 'introduce',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'introSidebar',
           },
-          // {
-          //   label: '编程基础',
-          //   position: 'left',
-          //   type: 'docSidebar',
-          //   sidebarId: 'program_basics',
-          // },
+          {
+            label: 'programing_basics',
+            position: 'left',
+            type: 'docSidebar',
+            sidebarId: 'program_basics',
+          },
           // node
           // {
           //   label: 'node.js',

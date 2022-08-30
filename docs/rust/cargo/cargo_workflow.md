@@ -1,9 +1,10 @@
-# cargo
+# cargo使用
 
-cargo workflow
+
 
 ### 创建项目
 ```bash
+// 创建一个二进制项目
 cargo new xxx
 
 // 如果是一个库
