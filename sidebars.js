@@ -35,6 +35,7 @@ const sidebars = {
   // 编程基础
   program_basics: [
     'program_basics/info',
+    'program_basics/开发环境',
     {
       label: '操作系统',
       type: 'category',
@@ -71,7 +72,13 @@ const sidebars = {
         'program_basics/algorithms/info',
       ]
     },
-
+    {
+      label: 'leecode',
+      type: 'category',
+      items: [
+        'program_basics/leecode/两数之和',
+      ]
+    },
   ],
 
   // // node
