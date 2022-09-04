@@ -62,7 +62,10 @@ const sidebars = {
       type: 'category',
       items: [
         'program_basics/data_structures/info',
-        'program_basics/data_structures/linked',
+        'program_basics/data_structures/链表',
+        'program_basics/data_structures/数组',
+        'program_basics/data_structures/二叉树',
+        'program_basics/data_structures/图',
       ]
     },
     {
@@ -70,13 +73,6 @@ const sidebars = {
       type: 'category',
       items: [
         'program_basics/algorithms/info',
-      ]
-    },
-    {
-      label: 'leecode',
-      type: 'category',
-      items: [
-        'program_basics/leecode/两数之和',
       ]
     },
   ],
@@ -94,62 +90,90 @@ const sidebars = {
   rust : [
     'rust/info',
     {
-      label: 'rust基础知识',
+      label: '1.rust所有权机制(重点)',
       type: 'category',
       items: [
-        'rust/rust基础知识/内存-栈与堆',
-        'rust/rust基础知识/所有权',
-        'rust/rust基础知识/借用',
-        'rust/rust基础知识/生命周期',
-        'rust/rust基础知识/变量绑定与解构',
-        'rust/rust基础知识/数值类型',
-        'rust/rust基础知识/布尔类型',
-        'rust/rust基础知识/单元类型',
-        'rust/rust基础知识/字符类型',
-        'rust/rust基础知识/数组',
-        'rust/rust基础知识/元组',
-        'rust/rust基础知识/结构体',
-        'rust/rust基础知识/枚举',
-        'rust/rust基础知识/字符串与切片',
-        'rust/rust基础知识/动态数组',
-        'rust/rust基础知识/键值对',
-        'rust/rust基础知识/类型转换',
+        'rust/rust基础知识/所有权机制/内存基础栈与堆',
+        'rust/rust基础知识/所有权机制/所有权',
+        'rust/rust基础知识/所有权机制/借用',
+        'rust/rust基础知识/所有权机制/生命周期1',
+        'rust/rust基础知识/所有权机制/生命周期2',
+        'rust/rust基础知识/所有权机制/static生命周期',
+      ],
+    },
+    {
+      label: '2.rust类型系统',
+      type: 'category',
+      items: [
+        'rust/rust基础知识/类型系统/变量绑定与解构',
+        'rust/rust基础知识/类型系统/数值类型',
+        'rust/rust基础知识/类型系统/布尔类型',
+        'rust/rust基础知识/类型系统/单元类型',
+        'rust/rust基础知识/类型系统/字符类型',
+        'rust/rust基础知识/类型系统/数组',
+        'rust/rust基础知识/类型系统/元组',
+        'rust/rust基础知识/类型系统/结构体',
+        'rust/rust基础知识/类型系统/枚举',
+        'rust/rust基础知识/类型系统/字符串与切片',
+        'rust/rust基础知识/类型系统/动态数组',
+        'rust/rust基础知识/类型系统/键值对',
+        'rust/rust基础知识/类型系统/类型转换',
+        'rust/rust基础知识/类型系统/新类型和类型别名',
+        'rust/rust基础知识/类型系统/定长类型和不定长类型',
+        'rust/rust基础知识/类型系统/全局变量',
+      ],
+    },
+    {
+      label: '3.rust智能指针',
+      type: 'category',
+      items: [
+        'rust/rust基础知识/智能指针/Box堆分配对象',
+        'rust/rust基础知识/智能指针/Deref解引用',
+        'rust/rust基础知识/智能指针/Drop释放资源',
+        'rust/rust基础知识/智能指针/Rc与Arc',
+        'rust/rust基础知识/智能指针/Cell与RefCell',
+      ],
+    },
+    {
+      label: '4.rust流程控制',
+      type: 'category',
+      items: [
         'rust/rust基础知识/流程控制',
         'rust/rust基础知识/模式匹配',
+      ]
+    },
+    {
+      label: '5.rust函数编程',
+      type: 'category',
+      items: [
         'rust/rust基础知识/函数',
+        'rust/rust基础知识/闭包',
+        'rust/rust基础知识/迭代器',
         'rust/rust基础知识/方法',
         'rust/rust基础知识/泛型',
         'rust/rust基础知识/特征',
-        'rust/rust基础知识/错误处理',
+      ]
+    },
+    {
+      label: '6.rust错误处理',
+      type: 'category',
+      items: [
+        'rust/rust基础知识/错误处理/错误处理1',
+        'rust/rust基础知识/错误处理/错误处理2',
+        'rust/rust基础知识/错误处理/组合器',
+        'rust/rust基础知识/错误处理/第三方库',
+      ]
+    },
+    {
+      label: '7.rust模块管理',
+      type: 'category',
+      items: [
         'rust/rust基础知识/包和模块',
         'rust/rust基础知识/注释和文档',
       ]
     },
     {
-      label: 'rust进阶知识',
-      type: 'category',
-      items: [
-        'rust/rust进阶知识/info',
-        'rust/rust进阶知识/深入类型系统/新类型和类型别名',
-        'rust/rust进阶知识/深入类型系统/定长类型和不定长类型',
-        'rust/rust进阶知识/深入类型系统/枚举和整数',
-        'rust/rust进阶知识/函数式编程/迭代器',
-        'rust/rust进阶知识/函数式编程/闭包',
-        'rust/rust进阶知识/智能指针/Box堆分配对象',
-        'rust/rust进阶知识/智能指针/Deref解引用',
-        'rust/rust进阶知识/生命周期/深入生命周期',
-        'rust/rust进阶知识/生命周期/static的生命周期',
-        'rust/rust进阶知识/智能指针/Box堆分配对象',
-        'rust/rust进阶知识/智能指针/Deref解引用',
-        'rust/rust进阶知识/智能指针/Drop释放资源',
-        'rust/rust进阶知识/智能指针/Rc与Arc',
-        'rust/rust进阶知识/智能指针/Cell与RefCell',
-        'rust/rust进阶知识/全局变量',
-        'rust/rust进阶知识/错误处理',
-      ]
-    },
-    {
-      label: 'rust多线程编程',
+      label: '8.rust多线程编程',
       type: 'category',
       items: [
         'rust/rust多线程并发编程/info',
@@ -163,7 +187,23 @@ const sidebars = {
       ]
     },
     {
-      label: 'cargo使用',
+      label: '9.rust异步编程',
+      type: 'category',
+      items: [
+        'rust/rust异步编程/info',
+      ]
+    },
+    {
+      label: '10.rust常用开发库',
+      type: 'category',
+      items: [
+        'rust/rust开发库/info',
+        'rust/rust开发库/时间库',
+        'rust/rust开发库/全局变量',
+      ]
+    },
+    {
+      label: '11.cargo使用',
       type: 'category',
       items: [
         'rust/cargo/cargo_workflow',
@@ -174,7 +214,7 @@ const sidebars = {
       ]
     },
     {
-      label: 'rust测试',
+      label: '12.rust测试',
       type: 'category',
       items: [
         'rust/rust自动化测试/断言',
@@ -184,10 +224,18 @@ const sidebars = {
       ]
     },
     {
-      label: 'rust常用开发库',
+      label: 'rust web编程',
       type: 'category',
       items: [
-        'rust/rust开发库/info',
+        'rust/rust web编程/info',
+      ]
+    },
+    {
+      label: 'rust零知识证明库',
+      type: 'category',
+      items: [
+        'rust/rust零知识证明库/info',
+        'rust/rust零知识证明库/zkSnark-bellman库',
       ]
     },
   ],

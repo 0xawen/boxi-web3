@@ -127,7 +127,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'blockchain',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
+          },
           {
             href: 'https://github.com/Mr-Boxi/web3_blog',
             label: 'GitHub',
@@ -139,7 +143,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '学习',
+            title: 'study',
             items: [
               {
                 label: 'rust',
@@ -194,7 +198,7 @@ const config = {
             ],
           },
         ],
-        copyright: `<p><a href="http://beian.miit.gov.cn/" >${beian}</a></p><p>Copyright © ${new Date().getFullYear()} boxi `,
+        copyright: `<a href="http://beian.miit.gov.cn/" >${beian}</a> Copyright © ${new Date().getFullYear()} boxi `,
         //copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
