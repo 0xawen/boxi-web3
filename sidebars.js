@@ -120,7 +120,6 @@ const sidebars = {
         'rust/rust基础知识/类型系统/类型转换',
         'rust/rust基础知识/类型系统/新类型和类型别名',
         'rust/rust基础知识/类型系统/定长类型和不定长类型',
-        'rust/rust基础知识/类型系统/全局变量',
       ],
     },
     {
@@ -138,34 +137,42 @@ const sidebars = {
       label: '4.rust流程控制',
       type: 'category',
       items: [
-        'rust/rust基础知识/流程控制',
-        'rust/rust基础知识/模式匹配',
+        'rust/rust基础知识/流程控制/流程控制',
+        'rust/rust基础知识/流程控制/模式匹配',
       ]
     },
     {
       label: '5.rust函数编程',
       type: 'category',
       items: [
-        'rust/rust基础知识/函数',
-        'rust/rust基础知识/闭包',
-        'rust/rust基础知识/迭代器',
-        'rust/rust基础知识/方法',
-        'rust/rust基础知识/泛型',
-        'rust/rust基础知识/特征',
+        'rust/rust基础知识/函数编程/函数',
+        'rust/rust基础知识/函数编程/闭包',
+        'rust/rust基础知识/函数编程/迭代器',
+        'rust/rust基础知识/函数编程/方法',
       ]
     },
     {
-      label: '6.rust错误处理',
+      label: '6.rust泛型与特征',
       type: 'category',
       items: [
-        'rust/rust基础知识/错误处理/错误处理1',
-        'rust/rust基础知识/错误处理/错误处理2',
+        'rust/rust基础知识/泛型与特征/泛型',
+        'rust/rust基础知识/泛型与特征/特征1',
+        'rust/rust基础知识/泛型与特征/特征2',
+        'rust/rust基础知识/泛型与特征/特征对象',
+      ],
+    },
+    {
+      label: '7.rust错误处理',
+      type: 'category',
+      items: [
+        'rust/rust基础知识/错误处理/result',
+        'rust/rust基础知识/错误处理/panic',
         'rust/rust基础知识/错误处理/组合器',
         'rust/rust基础知识/错误处理/第三方库',
       ]
     },
     {
-      label: '7.rust模块管理',
+      label: '8.rust模块管理',
       type: 'category',
       items: [
         'rust/rust基础知识/包和模块',
@@ -173,7 +180,7 @@ const sidebars = {
       ]
     },
     {
-      label: '8.rust多线程编程',
+      label: '9.rust多线程编程',
       type: 'category',
       items: [
         'rust/rust多线程并发编程/info',
@@ -187,23 +194,26 @@ const sidebars = {
       ]
     },
     {
-      label: '9.rust异步编程',
+      label: '10.rust异步编程',
       type: 'category',
       items: [
         'rust/rust异步编程/info',
+        'rust/rust异步编程/async与await',
+        'rust/rust异步编程/async_web服务器',
       ]
     },
     {
-      label: '10.rust常用开发库',
+      label: '11.rust常用开发库',
       type: 'category',
       items: [
         'rust/rust开发库/info',
         'rust/rust开发库/时间库',
         'rust/rust开发库/全局变量',
+        'rust/rust基础知识/类型系统/全局变量',
       ]
     },
     {
-      label: '11.cargo使用',
+      label: '12.cargo使用',
       type: 'category',
       items: [
         'rust/cargo/cargo_workflow',
@@ -214,7 +224,7 @@ const sidebars = {
       ]
     },
     {
-      label: '12.rust测试',
+      label: '13.rust测试',
       type: 'category',
       items: [
         'rust/rust自动化测试/断言',
@@ -235,7 +245,47 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/rust零知识证明库/info',
-        'rust/rust零知识证明库/zkSnark-bellman库',
+        {
+          label:'snarks**(常见)',
+          type: 'category',
+          items: [
+            'rust/rust零知识证明库/snarks',
+            'rust/rust零知识证明库/groth16',
+            'rust/rust零知识证明库/bellman库',
+            'rust/rust零知识证明库/bellman示例1',
+            'rust/rust零知识证明库/libsnark库',
+            'rust/rust零知识证明库/zokrates',
+            'rust/rust零知识证明库/zkinterface库',
+          ]
+        },
+        {
+          label:'snorks(常见)',
+          type: 'category',
+          items: [
+            'rust/rust零知识证明库/snorks',
+          ]
+        },
+        {
+          label:'bulletproof(常见)',
+          type: 'category',
+          items: [
+            'rust/rust零知识证明库/bulletproof',
+          ]
+        },
+        {
+          label:'starks',
+          type: 'category',
+          items: [
+            'rust/rust零知识证明库/starks',
+          ]
+        },
+        {
+          label:'zkp生态应用',
+          type: 'category',
+          items: [
+            'rust/rust零知识证明库/zk_application',
+          ]
+        },
       ]
     },
   ],

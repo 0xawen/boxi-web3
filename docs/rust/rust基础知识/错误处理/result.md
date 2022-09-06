@@ -1,6 +1,6 @@
-# 错误处理
+# result
 
-### Result<T,E>
+### Result
 
 ```rust
 enum Result<T, E> {
@@ -9,24 +9,7 @@ enum Result<T, E> {
 }
 ```
 
-#### 失败就panic: unwrap 或者 expect
-
-```rust
-// unwrap 如果Ok, 返回Ok的值， 如果Err,则调用panic
-// expect 出错则直接panic
-// ? 出错则直接返回错误
-use std::fs::File;
-use std::io;
-use std::io::Read;
-
-fn read_unsename_from_file() -> Result<String, io::Error> {
-    let mut s = String::new();
-    
-    File::open("hello.txt")?.read_to_string(&mut s)?;
-}
-```
-
-#### 返回错误 - ？
+#### 返回错误
 
 - ？的错误使用
 
@@ -59,13 +42,5 @@ use std::io;
 
 fn read_unsername_from_file() -> Result<String, io::Error> {
     fs::read_to_string("hello.txt")
-}
-```
-
-### Panic
-
-```rust
-fn main() {
-    panic!("xxx");
 }
 ```
