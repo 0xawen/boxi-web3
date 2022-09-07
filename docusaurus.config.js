@@ -67,7 +67,7 @@ const config = {
         },
         items: [
           {
-            label: 'introduce',
+            label: 'introduction',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'introSidebar',
@@ -120,6 +120,12 @@ const config = {
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'move',
+          },
+          {
+            label: 'zkp',
+            position: 'left',
+            type: 'docSidebar',
+            sidebarId: 'zeroKnowledgeProofs'
           },
           {
             label: 'blockchain',

@@ -1,4 +1,4 @@
-# cargo使用
+# cargo简单使用
 
 
 
@@ -40,77 +40,18 @@ cargo new xxx --lib
         └── test_module.rs
 ```
 
-### 添加依赖
+- `Cargo.toml` 和 `Cargo.lock` 保存在 `package` 根目录下
 
-```test
-[dependencies]
-# 本地
-mylib = [path="./mylib", version="0.1.0"]
+- 源代码放在 `src` 目录下
 
-# crate.io
-time = "0.1.12"
+- 默认的 `lib` 包根是 `src/lib.rs`
 
-# github.com 默认master
-regex = { git = "https://github.com/rust-lang/regex",]
-regex = { git = "https://github.com/rust-lang/regex", branch = "next"]
-regex = { git = "https://github.com/rust-lang/regex", tag = "v0.1.1", rev="xxxx"]
+- 默认的二进制包根是`src/main.rs`
 
-# 根据平台引入依赖
-[target.'cfg(windows)'.dependencies]
-winhttp = "0.5.0"
+  - 其它二进制包根放在 `src/bin/` 目录下
 
-[target.'cfg(unix)'.dependencies]
-openssl = "0.5.0"
+- 基准测试 benchmark 放在 `benches` 目录下
 
-[target.'cfg(not(unix))'.dependencies] # 不是unix 平台是后引入
-openssl = "1.0.1"
+- 示例代码放在 `examples` 目录下
 
-[target.'cfg(target_arch = "x86_64")'.dependencies]
-native = { path = "native/x86_64" 
-
-[target.x86_64-pc-windows-gnu.dependencies]
-winhttp = "0.4.0"
-
-[target.i686-unknown-linux-gnu.dependencies]
-openssl = "1.0.1"
-
-
-# 测试开发依赖
-[dev-dependencies]
-tempdir = "0.3"
-
-[target.'cfg(unix)'.dev-dependencies]
-mio = "0.0.1"
-
-
-# 构建依赖   构建脚本( build.rs )和项目的正常代码是彼此独立
-[build-dependencies]
-cc = "1.0.2"
-
-[target.'cfg(unix)'.build-dependencies]
-cc = "1.0.3"
-
-
-# 重命名依赖
-[dependencies]
-foo = "0.1"
-bar = { git = "https://github.com/example/project", package = "foo" }
-baz = { version = "0.1", registry = "custom", package = "foo" }
-
-# extern crate foo; // 来自 crates.io
-# extern crate bar; // 来自 git repository
-# extern crate baz; // 来自 registry `custom`
-
-
-# 依赖覆盖
-
-```
-
-### 开发
-
-挑选合适的库...
-
-### 测试
-
-编写测试用例
-
+- 集成测试代码放在 `tests` 目录下

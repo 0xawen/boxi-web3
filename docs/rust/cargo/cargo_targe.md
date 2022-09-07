@@ -1,4 +1,4 @@
-# cargo target
+# cargo对象
 
  **Cargo 项目中包含有一些对象，它们包含的源代码文件可以被编译成相应的包，这些对象被称之为 Cargo Target**
 

@@ -210,6 +210,8 @@ const sidebars = {
         'rust/rust开发库/时间库',
         'rust/rust开发库/全局变量',
         'rust/rust基础知识/类型系统/全局变量',
+        'rust/rust开发库/日志库-log',
+        'rust/rust开发库/日志库-tracing',
       ]
     },
     {
@@ -217,9 +219,10 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/cargo/cargo_workflow',
+        'rust/cargo/cargo添加依赖',
         'rust/cargo/cargo_targe',
-        'rust/cargo/cargo_workspace',
         'rust/cargo/cargo_条件编译',
+        'rust/cargo/cargo_workspace',
         'rust/cargo/cargo配置格式',
       ]
     },
@@ -234,58 +237,17 @@ const sidebars = {
       ]
     },
     {
+      label: 'rust重点难点',
+      type: 'category',
+      items: [
+        'rust/rust基础知识/重点难点/切片与切片引用',
+      ]
+    },
+    {
       label: 'rust web编程',
       type: 'category',
       items: [
         'rust/rust web编程/info',
-      ]
-    },
-    {
-      label: 'rust零知识证明库',
-      type: 'category',
-      items: [
-        'rust/rust零知识证明库/info',
-        {
-          label:'snarks**(常见)',
-          type: 'category',
-          items: [
-            'rust/rust零知识证明库/snarks',
-            'rust/rust零知识证明库/groth16',
-            'rust/rust零知识证明库/bellman库',
-            'rust/rust零知识证明库/bellman示例1',
-            'rust/rust零知识证明库/libsnark库',
-            'rust/rust零知识证明库/zokrates',
-            'rust/rust零知识证明库/zkinterface库',
-          ]
-        },
-        {
-          label:'snorks(常见)',
-          type: 'category',
-          items: [
-            'rust/rust零知识证明库/snorks',
-          ]
-        },
-        {
-          label:'bulletproof(常见)',
-          type: 'category',
-          items: [
-            'rust/rust零知识证明库/bulletproof',
-          ]
-        },
-        {
-          label:'starks',
-          type: 'category',
-          items: [
-            'rust/rust零知识证明库/starks',
-          ]
-        },
-        {
-          label:'zkp生态应用',
-          type: 'category',
-          items: [
-            'rust/rust零知识证明库/zk_application',
-          ]
-        },
       ]
     },
   ],
@@ -493,6 +455,51 @@ const sidebars = {
             'rust_contract/solana/solana_项目/mail_dapp',
           ],
         },
+      ]
+    },
+  ],
+
+  zeroKnowledgeProofs : [
+    'zero_knowledge_proofs/info',
+    {
+      label:'snarks**(常见)',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/snarks',
+        'zero_knowledge_proofs/groth16',
+        'zero_knowledge_proofs/bellman库',
+        'zero_knowledge_proofs/bellman示例1',
+        'zero_knowledge_proofs/libsnark库',
+        'zero_knowledge_proofs/zokrates',
+        'zero_knowledge_proofs/zkinterface库',
+      ]
+    },
+    {
+      label:'snorks(常见)',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/snorks',
+      ]
+    },
+    {
+      label:'bulletproof(常见)',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/bulletproof',
+      ]
+    },
+    {
+      label:'starks',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/starks',
+      ]
+    },
+    {
+      label:'zkp生态应用',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/zk_application',
       ]
     },
   ],
