@@ -122,7 +122,7 @@ const config = {
             sidebarId: 'move',
           },
           {
-            label: 'zkp',
+            label: 'zero_knowledge_proofs',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'zeroKnowledgeProofs'

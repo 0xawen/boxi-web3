@@ -248,6 +248,8 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/rust web编程/info',
+        'rust/rust web编程/actix_hello_world',
+        'rust/rust web编程/actix_basics',
       ]
     },
   ],
