@@ -75,6 +75,20 @@ const sidebars = {
         'program_basics/algorithms/info',
       ]
     },
+    {
+      label: '系统设计',
+      type: 'category',
+      items: [
+        'program_basics/system_design/info',
+      ]
+    },
+    {
+      label: '设计模式',
+      type: 'category',
+      items: [
+        'program_basics/design_patterns/info',
+      ]
+    },
   ],
 
   // // node
