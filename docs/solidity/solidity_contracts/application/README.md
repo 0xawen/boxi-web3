@@ -1,6 +1,8 @@
-# solidity common application
+# 常见合约目录
 
-常见的dapp
+常见的合约1
+
+https://solidity-by-example.org/
 
 - eth钱包 --- ether_wallet
 - eth多签钱包 --- ether_multi_sig_wallet
@@ -21,3 +23,29 @@
 - Multi Call
 - Multi Delegatecall
 - 时间锁 --- Time Lock
+
+
+
+
+
+常见的合约2
+
+https://github.com/AmazingAng/WTFSolidit
+
+- ERC20
+
+- 代币水龙头
+- 空投
+- ERC721
+- 荷兰拍卖
+- 默克尔树
+- NFT交易所
+- 随机数
+- ERC1155
+- WETH
+- 分账
+- 线性释放
+- 代币锁
+- 时间锁
+- 代理合约
+- 可升级合约

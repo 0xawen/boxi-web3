@@ -13,6 +13,8 @@ https://github.com/matter-labs/awesome-zero-knowledge-proofs
 
 
 
+https://kb.delendum.xyz/
+
 ## 零知识证明系统
 
 1. **snarks**

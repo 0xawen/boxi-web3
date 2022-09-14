@@ -335,59 +335,58 @@ const sidebars = {
         'solidity/hardhat_workflow/upgrading_contract',
       ],
     },
+
     {
-      label: 'solidity合约库',
+      label: '合约库1-常见合约',
       type: 'category',
       items: [
-        {
-          label: '常见的合约',
-          type: 'category',
-          items: [
-            'solidity/solidity_contracts/application/ether_wallet',
-            'solidity/solidity_contracts/application/multi_sig_wallet',
-            'solidity/solidity_contracts/application/merkle_tree',
-            'solidity/solidity_contracts/application/iterable_mapping',
-            'solidity/solidity_contracts/application/erc20',
-            'solidity/solidity_contracts/application/erc721',
-            'solidity/solidity_contracts/application/precompute_contract_address',
-            'solidity/solidity_contracts/application/minimal_proxy_contract',
-            'solidity/solidity_contracts/application/upgradeable_contract',
-            'solidity/solidity_contracts/application/deploy_any_contract',
-            'solidity/solidity_contracts/application/write_any_slot',
-            'solidity/solidity_contracts/application/uni-directional_payment_channel',
-            'solidity/solidity_contracts/application/bi-directional_payment_channel',
-            'solidity/solidity_contracts/application/english_auction',
-            'solidity/solidity_contracts/application/dutch_auction',
-            'solidity/solidity_contracts/application/minimal_proxy_contract',
-            'solidity/solidity_contracts/application/multi_call',
-            'solidity/solidity_contracts/application/multi_delegatecall',
-            'solidity/solidity_contracts/application/time_lock',
-          ]
-        },
-        {
-          label: 'openzeppelin',
-          type: 'category',
-          items: [
-            'solidity/solidity_contracts/openzepplin/access_control',
-            'solidity/solidity_contracts/openzepplin/02.1_erc20',
-            'solidity/solidity_contracts/openzepplin/02.2_erc721',
-            'solidity/solidity_contracts/openzepplin/02.3_erc777',
-            'solidity/solidity_contracts/openzepplin/02.4_erc1155',
-            'solidity/solidity_contracts/openzepplin/governance',
-            'solidity/solidity_contracts/openzepplin/crosschain',
-            'solidity/solidity_contracts/openzepplin/uitilities',
-          ]
-        },
-        {
-          label: '可升级合约库',
-          type: 'category',
-          items: [
-            'solidity/solidity_contracts/openzeppelin_upgradeable/可升级合约',
-            'solidity/solidity_contracts/openzeppelin_upgradeable/erc20-upgradeable-example',
-          ]
-        }
-      ],
+        'solidity/solidity_contracts/application/README',
+        'solidity/solidity_contracts/application/ether_wallet',
+        'solidity/solidity_contracts/application/multi_sig_wallet',
+        'solidity/solidity_contracts/application/merkle_tree',
+        'solidity/solidity_contracts/application/iterable_mapping',
+        'solidity/solidity_contracts/application/erc20',
+        'solidity/solidity_contracts/application/erc721',
+        'solidity/solidity_contracts/application/precompute_contract_address',
+        'solidity/solidity_contracts/application/minimal_proxy_contract',
+        'solidity/solidity_contracts/application/upgradeable_contract',
+        'solidity/solidity_contracts/application/deploy_any_contract',
+        'solidity/solidity_contracts/application/write_any_slot',
+        'solidity/solidity_contracts/application/uni-directional_payment_channel',
+        'solidity/solidity_contracts/application/bi-directional_payment_channel',
+        'solidity/solidity_contracts/application/english_auction',
+        'solidity/solidity_contracts/application/dutch_auction',
+        'solidity/solidity_contracts/application/minimal_proxy_contract',
+        'solidity/solidity_contracts/application/multi_call',
+        'solidity/solidity_contracts/application/multi_delegatecall',
+        'solidity/solidity_contracts/application/time_lock',
+        'solidity/solidity_contracts/application/airdrop',
+
+      ]
     },
+    {
+      label: '合约库2-openzeppelin',
+      type: 'category',
+      items: [
+        'solidity/solidity_contracts/openzepplin/access_control',
+        'solidity/solidity_contracts/openzepplin/02.1_erc20',
+        'solidity/solidity_contracts/openzepplin/02.2_erc721',
+        'solidity/solidity_contracts/openzepplin/02.3_erc777',
+        'solidity/solidity_contracts/openzepplin/02.4_erc1155',
+        'solidity/solidity_contracts/openzepplin/governance',
+        'solidity/solidity_contracts/openzepplin/crosschain',
+        'solidity/solidity_contracts/openzepplin/uitilities',
+      ]
+    },
+    {
+      label: '合约库3-可升级合约库',
+      type: 'category',
+      items: [
+        'solidity/solidity_contracts/openzeppelin_upgradeable/可升级合约',
+        'solidity/solidity_contracts/openzeppelin_upgradeable/erc20-upgradeable-example',
+      ]
+    },
+
     {
       label: 'solidity漏洞',
       type: 'category',
@@ -478,7 +477,7 @@ const sidebars = {
   zeroKnowledgeProofs : [
     'zero_knowledge_proofs/info',
     {
-      label:'snarks**(常见)',
+      label:'zk-snarks**(常见)',
       type: 'category',
       items: [
         'zero_knowledge_proofs/snarks',
@@ -491,21 +490,21 @@ const sidebars = {
       ]
     },
     {
-      label:'snorks(常见)',
+      label:'zk-snorks(常见)',
       type: 'category',
       items: [
         'zero_knowledge_proofs/snorks',
       ]
     },
     {
-      label:'bulletproof(常见)',
+      label:'zk-bulletproof(常见)',
       type: 'category',
       items: [
         'zero_knowledge_proofs/bulletproof',
       ]
     },
     {
-      label:'starks',
+      label:'zk-starks',
       type: 'category',
       items: [
         'zero_knowledge_proofs/starks',
