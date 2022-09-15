@@ -335,7 +335,13 @@ const sidebars = {
         'solidity/hardhat_workflow/upgrading_contract',
       ],
     },
-
+    {
+      label: 'solidity设计模式',
+      type: 'category',
+      items: [
+        'solidity/solidity_patterns/info'
+      ]
+    },
     {
       label: '合约库1-常见合约',
       type: 'category',
@@ -361,7 +367,10 @@ const sidebars = {
         'solidity/solidity_contracts/application/multi_delegatecall',
         'solidity/solidity_contracts/application/time_lock',
         'solidity/solidity_contracts/application/airdrop',
-
+        'solidity/solidity_contracts/application/weth',
+        'solidity/solidity_contracts/application/paymentsplit',
+        'solidity/solidity_contracts/application/nftswap',
+        'solidity/solidity_contracts/application/tokenlocker',
       ]
     },
     {
@@ -386,7 +395,21 @@ const sidebars = {
         'solidity/solidity_contracts/openzeppelin_upgradeable/erc20-upgradeable-example',
       ]
     },
-
+    {
+      label: '合约库4-Defi',
+      type: 'category',
+      items: [
+        'solidity/solidity_contracts/defi/info',
+        'solidity/solidity_contracts/defi/uniswap',
+      ]
+    },
+    // {
+    //   label: '合约库5-nft',
+    //   type: 'category',
+    //   items: [
+    //     'solidity/solidity_contracts/defi/info'
+    //   ]
+    // },
     {
       label: 'solidity漏洞',
       type: 'category',

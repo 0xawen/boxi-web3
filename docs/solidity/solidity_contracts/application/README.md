@@ -26,26 +26,17 @@ https://solidity-by-example.org/
 
 
 
-
-
 常见的合约2
 
 https://github.com/AmazingAng/WTFSolidit
 
-- ERC20
-
 - 代币水龙头
 - 空投
-- ERC721
-- 荷兰拍卖
-- 默克尔树
 - NFT交易所
 - 随机数
-- ERC1155
 - WETH
 - 分账
 - 线性释放
 - 代币锁
 - 时间锁
 - 代理合约
-- 可升级合约
