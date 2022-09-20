@@ -124,10 +124,13 @@ const sidebars = {
         'rust/rust基础知识/类型系统/布尔类型',
         'rust/rust基础知识/类型系统/单元类型',
         'rust/rust基础知识/类型系统/字符类型',
+        'rust/rust基础知识/类型系统/范围类型',
+        'rust/rust基础知识/类型系统/切片类型',
         'rust/rust基础知识/类型系统/数组',
         'rust/rust基础知识/类型系统/元组',
         'rust/rust基础知识/类型系统/结构体',
         'rust/rust基础知识/类型系统/枚举',
+        'rust/rust基础知识/类型系统/str类型',
         'rust/rust基础知识/类型系统/字符串与切片',
         'rust/rust基础知识/类型系统/动态数组',
         'rust/rust基础知识/类型系统/键值对',
@@ -137,14 +140,17 @@ const sidebars = {
       ],
     },
     {
-      label: '3.rust智能指针',
+      label: '3.rust指针类型',
       type: 'category',
       items: [
-        'rust/rust基础知识/智能指针/Box堆分配对象',
-        'rust/rust基础知识/智能指针/Deref解引用',
-        'rust/rust基础知识/智能指针/Drop释放资源',
-        'rust/rust基础知识/智能指针/Rc与Arc',
-        'rust/rust基础知识/智能指针/Cell与RefCell',
+        'rust/rust基础知识/指针类型/info',
+        'rust/rust基础知识/指针类型/安全的指针',
+        'rust/rust基础知识/指针类型/原始指针',
+        'rust/rust基础知识/指针类型/Box堆分配对象',
+        'rust/rust基础知识/指针类型/Deref解引用',
+        'rust/rust基础知识/指针类型/Drop释放资源',
+        'rust/rust基础知识/指针类型/Rc与Arc',
+        'rust/rust基础知识/指针类型/Cell与RefCell',
       ],
     },
     {
@@ -193,8 +199,38 @@ const sidebars = {
         'rust/rust基础知识/注释和文档',
       ]
     },
+
     {
-      label: '9.rust多线程编程',
+      label: '9.cargo使用',
+      type: 'category',
+      items: [
+        'rust/cargo/cargo_workflow',
+        'rust/cargo/cargo添加依赖',
+        'rust/cargo/cargo_targe',
+        'rust/cargo/cargo_条件编译',
+        'rust/cargo/cargo_workspace',
+        'rust/cargo/cargo配置格式',
+      ]
+    },
+    {
+      label: '10.rust测试',
+      type: 'category',
+      items: [
+        'rust/rust自动化测试/断言',
+        'rust/rust自动化测试/单元测试',
+        'rust/rust自动化测试/集成测试',
+        'rust/rust自动化测试/基准测试',
+      ]
+    },
+    {
+      label: '11.rust重点难点',
+      type: 'category',
+      items: [
+        'rust/rust基础知识/重点难点/切片与切片引用',
+      ]
+    },
+    {
+      label: 'rust 多线程编程',
       type: 'category',
       items: [
         'rust/rust多线程并发编程/info',
@@ -208,53 +244,12 @@ const sidebars = {
       ]
     },
     {
-      label: '10.rust异步编程',
+      label: 'rust 异步编程',
       type: 'category',
       items: [
         'rust/rust异步编程/info',
         'rust/rust异步编程/async与await',
         'rust/rust异步编程/async_web服务器',
-      ]
-    },
-    {
-      label: '11.rust常用开发库',
-      type: 'category',
-      items: [
-        'rust/rust开发库/info',
-        'rust/rust开发库/时间库',
-        'rust/rust开发库/全局变量',
-        'rust/rust基础知识/类型系统/全局变量',
-        'rust/rust开发库/日志库-log',
-        'rust/rust开发库/日志库-tracing',
-      ]
-    },
-    {
-      label: '12.cargo使用',
-      type: 'category',
-      items: [
-        'rust/cargo/cargo_workflow',
-        'rust/cargo/cargo添加依赖',
-        'rust/cargo/cargo_targe',
-        'rust/cargo/cargo_条件编译',
-        'rust/cargo/cargo_workspace',
-        'rust/cargo/cargo配置格式',
-      ]
-    },
-    {
-      label: '13.rust测试',
-      type: 'category',
-      items: [
-        'rust/rust自动化测试/断言',
-        'rust/rust自动化测试/单元测试',
-        'rust/rust自动化测试/集成测试',
-        'rust/rust自动化测试/基准测试',
-      ]
-    },
-    {
-      label: 'rust重点难点',
-      type: 'category',
-      items: [
-        'rust/rust基础知识/重点难点/切片与切片引用',
       ]
     },
     {
@@ -266,6 +261,57 @@ const sidebars = {
         'rust/rust web编程/actix_basics',
       ]
     },
+    {
+      label: 'rust 网络编程',
+      type: 'category',
+      items: [
+        'rust/rust网络编程/info',
+        'rust/rust网络编程/tcp',
+        'rust/rust网络编程/udp',
+      ]
+    },
+    {
+      label: 'rust ffi编程',
+      type: 'category',
+      items: [
+        'rust/rust ffi编程/info',
+      ]
+    },
+
+    {
+      label: 'rust unsafe编程',
+      type: 'category',
+      items: [
+        'rust/rust unsafe编程/info',
+      ]
+    },
+    {
+      label: 'rust 宏编程',
+      type: 'category',
+      items: [
+        'rust/rust宏编程/info',
+      ]
+    },
+    {
+      label: 'rust 设计模式',
+      type: 'category',
+      items: [
+        'rust/rust设计模式/info',
+      ]
+    },
+    {
+      label: 'rust 常用开发库',
+      type: 'category',
+      items: [
+        'rust/rust开发库/info',
+        'rust/rust开发库/时间库',
+        'rust/rust开发库/全局变量',
+        'rust/rust基础知识/类型系统/全局变量',
+        'rust/rust开发库/日志库-log',
+        'rust/rust开发库/日志库-tracing',
+      ]
+    },
+
   ],
 
   // go
@@ -322,25 +368,6 @@ const sidebars = {
         'solidity/solidity_basic/verifying_signature',
         'solidity/solidity_basic/gas_saving_techniques'
       ],
-    },
-    {
-      label: 'hardhat项目工具',
-      type: 'category',
-      items: [
-        'solidity/hardhat_workflow/hardhat_project_setting',
-        'solidity/hardhat_workflow/write_and_compiling',
-        'solidity/hardhat_workflow/testing_contract',
-        'solidity/hardhat_workflow/deploy_contracts',
-        'solidity/hardhat_workflow/connect_test_networks',
-        'solidity/hardhat_workflow/upgrading_contract',
-      ],
-    },
-    {
-      label: 'solidity设计模式',
-      type: 'category',
-      items: [
-        'solidity/solidity_patterns/info'
-      ]
     },
     {
       label: '合约库1-常见合约',
@@ -410,6 +437,32 @@ const sidebars = {
     //     'solidity/solidity_contracts/defi/info'
     //   ]
     // },
+    {
+      label: 'hardhat项目工具',
+      type: 'category',
+      items: [
+        'solidity/hardhat_workflow/hardhat_project_setting',
+        'solidity/hardhat_workflow/write_and_compiling',
+        'solidity/hardhat_workflow/testing_contract',
+        'solidity/hardhat_workflow/deploy_contracts',
+        'solidity/hardhat_workflow/connect_test_networks',
+        'solidity/hardhat_workflow/upgrading_contract',
+      ],
+    },
+    {
+      label: 'solidity项目实战',
+      type: 'category',
+      items: [
+        'solidity/solidity_project/project',
+      ]
+    },
+    {
+      label: 'solidity设计模式',
+      type: 'category',
+      items: [
+        'solidity/solidity_patterns/info'
+      ]
+    },
     {
       label: 'solidity漏洞',
       type: 'category',
