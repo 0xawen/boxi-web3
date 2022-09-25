@@ -1,4 +1,4 @@
-# first application
+# 计数器
 
 一个简单的计数器合约
 

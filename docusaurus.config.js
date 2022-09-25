@@ -9,7 +9,7 @@ const beian = '粤IPC备2022098206'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '提供高质量的web3内容',
+  title: 'web3技能树',
   tagline: 'by boxi',
   url: 'http://boxismartcontracts.com',
   baseUrl: '/',

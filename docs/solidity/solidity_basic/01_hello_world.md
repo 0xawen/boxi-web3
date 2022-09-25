@@ -1,4 +1,4 @@
-# hello world
+# Hello world
 
 ```solidity
 // SPDX-License-Identifier: MIT

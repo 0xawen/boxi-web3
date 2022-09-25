@@ -35,7 +35,6 @@ const sidebars = {
   // 编程基础
   program_basics: [
     'program_basics/info',
-    'program_basics/开发环境',
     {
       label: '操作系统',
       type: 'category',
@@ -89,6 +88,13 @@ const sidebars = {
         'program_basics/design_patterns/info',
       ]
     },
+    {
+      label: '开发工具',
+      type: 'category',
+      items: [
+        'program_basics/开发环境',
+      ]
+    },
   ],
 
   // // node
@@ -102,6 +108,7 @@ const sidebars = {
 
   // rust
   rust : [
+    'rust/why_rust',
     'rust/info',
     {
       label: '1.rust所有权机制(重点)',
@@ -119,6 +126,7 @@ const sidebars = {
       label: '2.rust类型系统',
       type: 'category',
       items: [
+        'rust/rust基础知识/类型系统/常量与静态变量',
         'rust/rust基础知识/类型系统/变量绑定与解构',
         'rust/rust基础知识/类型系统/数值类型',
         'rust/rust基础知识/类型系统/布尔类型',
@@ -134,7 +142,10 @@ const sidebars = {
         'rust/rust基础知识/类型系统/字符串与切片',
         'rust/rust基础知识/类型系统/动态数组',
         'rust/rust基础知识/类型系统/键值对',
-        'rust/rust基础知识/类型系统/类型转换',
+        'rust/rust基础知识/类型系统/类型转换_as',
+        'rust/rust基础知识/类型系统/类型转换_From和Into',
+        'rust/rust基础知识/类型系统/类型转换_TryFrom和TryInto',
+        'rust/rust基础知识/类型系统/类型转换_ToString和FromStr',
         'rust/rust基础知识/类型系统/新类型和类型别名',
         'rust/rust基础知识/类型系统/定长类型和不定长类型',
       ],
@@ -157,6 +168,7 @@ const sidebars = {
       label: '4.rust流程控制',
       type: 'category',
       items: [
+        'rust/rust基础知识/流程控制/if_else',
         'rust/rust基础知识/流程控制/流程控制',
         'rust/rust基础知识/流程控制/模式匹配',
       ]
@@ -166,9 +178,11 @@ const sidebars = {
       type: 'category',
       items: [
         'rust/rust基础知识/函数编程/函数',
+        'rust/rust基础知识/函数编程/函数指针',
+        'rust/rust基础知识/函数编程/方法',
         'rust/rust基础知识/函数编程/闭包',
         'rust/rust基础知识/函数编程/迭代器',
-        'rust/rust基础知识/函数编程/方法',
+
       ]
     },
     {
@@ -185,6 +199,7 @@ const sidebars = {
       label: '7.rust错误处理',
       type: 'category',
       items: [
+        'rust/rust基础知识/错误处理/option',
         'rust/rust基础知识/错误处理/result',
         'rust/rust基础知识/错误处理/panic',
         'rust/rust基础知识/错误处理/组合器',
@@ -262,6 +277,13 @@ const sidebars = {
       ]
     },
     {
+      label: 'rust 操作数据库',
+      type: 'category',
+      items: [
+        'rust/rust操作数据库/info',
+      ]
+    },
+    {
       label: 'rust 网络编程',
       type: 'category',
       items: [
@@ -271,18 +293,17 @@ const sidebars = {
       ]
     },
     {
+      label: 'rust unsafe编程',
+      type: 'category',
+      items: [
+        'rust/rust unsafe编程/unsafe',
+      ]
+    },
+    {
       label: 'rust ffi编程',
       type: 'category',
       items: [
         'rust/rust ffi编程/info',
-      ]
-    },
-
-    {
-      label: 'rust unsafe编程',
-      type: 'category',
-      items: [
-        'rust/rust unsafe编程/info',
       ]
     },
     {
@@ -311,7 +332,7 @@ const sidebars = {
         'rust/rust开发库/日志库-tracing',
       ]
     },
-
+    'rust/learn_project'
   ],
 
   // go
@@ -330,6 +351,7 @@ const sidebars = {
         'solidity/solidity_basic/first_app',
         'solidity/solidity_basic/primitive_data_types',
         'solidity/solidity_basic/variables',
+        'solidity/solidity_basic/constants',
         'solidity/solidity_basic/immutable',
         'solidity/solidity_basic/read_and_write_state_variable',
         'solidity/solidity_basic/ether_and_wei',
@@ -450,13 +472,6 @@ const sidebars = {
       ],
     },
     {
-      label: 'solidity项目实战',
-      type: 'category',
-      items: [
-        'solidity/solidity_project/project',
-      ]
-    },
-    {
       label: 'solidity设计模式',
       type: 'category',
       items: [
@@ -482,6 +497,13 @@ const sidebars = {
         'solidity/solidity_hack/block_timestamp_manipulation',
         'solidity/solidity_hack/signature_replay',
         'solidity/solidity_hack/bypass_contract_size_check',
+      ]
+    },
+    {
+      label: 'solidity项目实战',
+      type: 'category',
+      items: [
+        'solidity/solidity_project/project',
       ]
     },
   ],

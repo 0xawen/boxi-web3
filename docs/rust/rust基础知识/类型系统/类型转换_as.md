@@ -1,4 +1,6 @@
-## 类型转换
+# 类型转换 - as
+
+rust不提供隐式转换，一般使用显式转换。
 
 考虑精度问题
 
@@ -10,28 +12,6 @@ fn main() {
     let a = 3.1 as i8;
     let b = 100_i8 as i32;
     let c = 'a' as u8;
-}
-```
-
-### TryInto 转换
-
-```rust
-use std::convert::TryInto;
-//如果你要使用一个特征的方法，那么你需要引入该特征到当前的作用域中
-fn main() {
-    let a: u8 = 10;
-    let b: u16 = 1500;
-    
-    let b_: u8 = match b.try_into() {
-        Ok(b1) => b1,
-        Err(e) => {
-            println!("{:?}", e.to_string());
-            0
-        }
-    };
-    if a < b_ {
-        println!("Ten is less than one hundred.");
-    }
 }
 ```
 
