@@ -392,118 +392,160 @@ const sidebars = {
       ],
     },
     {
-      label: '合约库1-常见合约',
+      label: 'solidity智能合约标准和类库',
       type: 'category',
       items: [
-        'solidity/solidity_contracts/application/README',
-        'solidity/solidity_contracts/application/ether_wallet',
-        'solidity/solidity_contracts/application/multi_sig_wallet',
-        'solidity/solidity_contracts/application/merkle_tree',
-        'solidity/solidity_contracts/application/iterable_mapping',
-        'solidity/solidity_contracts/application/erc20',
-        'solidity/solidity_contracts/application/erc721',
-        'solidity/solidity_contracts/application/precompute_contract_address',
-        'solidity/solidity_contracts/application/minimal_proxy_contract',
-        'solidity/solidity_contracts/application/upgradeable_contract',
-        'solidity/solidity_contracts/application/deploy_any_contract',
-        'solidity/solidity_contracts/application/write_any_slot',
-        'solidity/solidity_contracts/application/uni-directional_payment_channel',
-        'solidity/solidity_contracts/application/bi-directional_payment_channel',
-        'solidity/solidity_contracts/application/english_auction',
-        'solidity/solidity_contracts/application/dutch_auction',
-        'solidity/solidity_contracts/application/minimal_proxy_contract',
-        'solidity/solidity_contracts/application/multi_call',
-        'solidity/solidity_contracts/application/multi_delegatecall',
-        'solidity/solidity_contracts/application/time_lock',
-        'solidity/solidity_contracts/application/airdrop',
-        'solidity/solidity_contracts/application/weth',
-        'solidity/solidity_contracts/application/paymentsplit',
-        'solidity/solidity_contracts/application/nftswap',
-        'solidity/solidity_contracts/application/tokenlocker',
+        {
+          label: '合约库1-常见合约',
+          type: 'category',
+          items: [
+            'solidity/solidity_contracts/application/README',
+            'solidity/solidity_contracts/application/ether_wallet',
+            'solidity/solidity_contracts/application/multi_sig_wallet',
+            'solidity/solidity_contracts/application/merkle_tree',
+            'solidity/solidity_contracts/application/iterable_mapping',
+            'solidity/solidity_contracts/application/erc20',
+            'solidity/solidity_contracts/application/erc721',
+            'solidity/solidity_contracts/application/precompute_contract_address',
+            'solidity/solidity_contracts/application/minimal_proxy_contract',
+            'solidity/solidity_contracts/application/upgradeable_contract',
+            'solidity/solidity_contracts/application/deploy_any_contract',
+            'solidity/solidity_contracts/application/write_any_slot',
+            'solidity/solidity_contracts/application/uni-directional_payment_channel',
+            'solidity/solidity_contracts/application/bi-directional_payment_channel',
+            'solidity/solidity_contracts/application/english_auction',
+            'solidity/solidity_contracts/application/dutch_auction',
+            'solidity/solidity_contracts/application/minimal_proxy_contract',
+            'solidity/solidity_contracts/application/multi_call',
+            'solidity/solidity_contracts/application/multi_delegatecall',
+            'solidity/solidity_contracts/application/time_lock',
+            'solidity/solidity_contracts/application/airdrop',
+            'solidity/solidity_contracts/application/weth',
+            'solidity/solidity_contracts/application/paymentsplit',
+            'solidity/solidity_contracts/application/nftswap',
+            'solidity/solidity_contracts/application/tokenlocker',
+          ]
+        },
+        {
+          label: '合约库2-openzeppelin',
+          type: 'category',
+          items: [
+            'solidity/solidity_contracts/openzepplin/access_control',
+            'solidity/solidity_contracts/openzepplin/02.1_erc20',
+            'solidity/solidity_contracts/openzepplin/02.2_erc721',
+            'solidity/solidity_contracts/openzepplin/02.3_erc777',
+            'solidity/solidity_contracts/openzepplin/02.4_erc1155',
+            'solidity/solidity_contracts/openzepplin/governance',
+            'solidity/solidity_contracts/openzepplin/crosschain',
+            'solidity/solidity_contracts/openzepplin/uitilities',
+          ]
+        },
+        {
+          label: '合约库3-可升级合约库',
+          type: 'category',
+          items: [
+            'solidity/solidity_contracts/upgradeable/可升级合约',
+            'solidity/solidity_contracts/upgradeable/erc20-upgradeable-example',
+          ]
+        },
+        {
+          label: '合约库4-Defi',
+          type: 'category',
+          items: [
+            'solidity/solidity_contracts/defi/info',
+            'solidity/solidity_contracts/defi/uniswap',
+          ]
+        },
+        // {
+        //   label: '合约库5-nft',
+        //   type: 'category',
+        //   items: [
+        //     'solidity/solidity_contracts/defi/info'
+        //   ]
+        // },
+        {
+          label: '合约开发最佳做法',
+          type: 'category',
+          items: [
+              'solidity/solidity_contracts/best_practice/info',
+          ],
+        },
       ]
     },
     {
-      label: '合约库2-openzeppelin',
+      label: 'solidity智能合约开发工具集',
       type: 'category',
       items: [
-        'solidity/solidity_contracts/openzepplin/access_control',
-        'solidity/solidity_contracts/openzepplin/02.1_erc20',
-        'solidity/solidity_contracts/openzepplin/02.2_erc721',
-        'solidity/solidity_contracts/openzepplin/02.3_erc777',
-        'solidity/solidity_contracts/openzepplin/02.4_erc1155',
-        'solidity/solidity_contracts/openzepplin/governance',
-        'solidity/solidity_contracts/openzepplin/crosschain',
-        'solidity/solidity_contracts/openzepplin/uitilities',
-      ]
-    },
-    {
-      label: '合约库3-可升级合约库',
-      type: 'category',
-      items: [
-        'solidity/solidity_contracts/openzeppelin_upgradeable/可升级合约',
-        'solidity/solidity_contracts/openzeppelin_upgradeable/erc20-upgradeable-example',
-      ]
-    },
-    {
-      label: '合约库4-Defi',
-      type: 'category',
-      items: [
-        'solidity/solidity_contracts/defi/info',
-        'solidity/solidity_contracts/defi/uniswap',
-      ]
-    },
-    // {
-    //   label: '合约库5-nft',
-    //   type: 'category',
-    //   items: [
-    //     'solidity/solidity_contracts/defi/info'
-    //   ]
-    // },
-    {
-      label: 'hardhat项目工具',
-      type: 'category',
-      items: [
-        'solidity/hardhat_workflow/hardhat_project_setting',
-        'solidity/hardhat_workflow/write_and_compiling',
-        'solidity/hardhat_workflow/testing_contract',
-        'solidity/hardhat_workflow/deploy_contracts',
-        'solidity/hardhat_workflow/connect_test_networks',
-        'solidity/hardhat_workflow/upgrading_contract',
+        'solidity/solidity_test_tools/foundry',
+        'solidity/solidity_test_tools/embark',
+        {
+          label: 'hardhat项目工具',
+          type: 'category',
+          items: [
+            'solidity/hardhat_workflow/hardhat_project_setting',
+            'solidity/hardhat_workflow/write_and_compiling',
+            'solidity/hardhat_workflow/testing_contract',
+            'solidity/hardhat_workflow/deploy_contracts',
+            'solidity/hardhat_workflow/connect_test_networks',
+            'solidity/hardhat_workflow/upgrading_contract',
+          ],
+        },
       ],
     },
+
     {
-      label: 'solidity设计模式',
+      label: 'solidity智能合约设计模式',
       type: 'category',
       items: [
         'solidity/solidity_patterns/info'
       ]
     },
     {
-      label: 'solidity漏洞',
+      label: 'solidity智能合约安全',
       type: 'category',
       items: [
-        'solidity/solidity_hack/README',
-        'solidity/solidity_hack/re_entrancy',
-        'solidity/solidity_hack/arithmetic_overflow_underflow',
-        'solidity/solidity_hack/self_destruct',
-        'solidity/solidity_hack/access_private_data',
-        'solidity/solidity_hack/delegatecall',
-        'solidity/solidity_hack/source_of_randomness',
-        'solidity/solidity_hack/denial_of_service',
-        'solidity/solidity_hack/phishing_with_tx_orgin',
-        'solidity/solidity_hack/hiding_malicious_code_with_external_contract',
-        'solidity/solidity_hack/honeypot',
-        'solidity/solidity_hack/front_running',
-        'solidity/solidity_hack/block_timestamp_manipulation',
-        'solidity/solidity_hack/signature_replay',
-        'solidity/solidity_hack/bypass_contract_size_check',
-      ]
+        {
+          label: 'solidity漏洞',
+          type: 'category',
+          items: [
+            'solidity/solidity_security/solidity_hack/README',
+            'solidity/solidity_security/solidity_hack/re_entrancy',
+            'solidity/solidity_security/solidity_hack/arithmetic_overflow_underflow',
+            'solidity/solidity_security/solidity_hack/self_destruct',
+            'solidity/solidity_security/solidity_hack/access_private_data',
+            'solidity/solidity_security/solidity_hack/delegatecall',
+            'solidity/solidity_security/solidity_hack/source_of_randomness',
+            'solidity/solidity_security/solidity_hack/denial_of_service',
+            'solidity/solidity_security/solidity_hack/phishing_with_tx_orgin',
+            'solidity/solidity_security/solidity_hack/hiding_malicious_code_with_external_contract',
+            'solidity/solidity_security/solidity_hack/honeypot',
+            'solidity/solidity_security/solidity_hack/front_running',
+            'solidity/solidity_security/solidity_hack/block_timestamp_manipulation',
+            'solidity/solidity_security/solidity_hack/signature_replay',
+            'solidity/solidity_security/solidity_hack/bypass_contract_size_check',
+          ]
+        },
+        {
+          label: '合约安全测试工具',
+          type: 'category',
+          items: [
+            'solidity/solidity_security/security_tools',
+          ],
+        },
+      ],
     },
     {
       label: 'solidity项目实战',
       type: 'category',
       items: [
         'solidity/solidity_project/project',
+      ]
+    },
+    {
+      label: 'EVM',
+      type: 'category',
+      items: [
+          'solidity/evm/info'
       ]
     },
   ],
