@@ -19,13 +19,12 @@
 
 - 数据库  database
 
-- 合约 solidity
+- 链 blockchains
+  - 合约 solidity
 
-- 合约 rust contract
+  - 合约 rust contract
 
-- 合约 move
-
-- 链 blockchain
+  - 合约 move
 
 
 

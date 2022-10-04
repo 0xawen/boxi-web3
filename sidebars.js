@@ -29,8 +29,8 @@ const sidebars = {
 
   // 前言
   introSidebar :[
-      '编程',
-      'intro',
+    'intro',
+    'why_programming',
   ],
 
   // 编程基础
@@ -348,10 +348,13 @@ const sidebars = {
 
   // 区块链
   blockchains: [
+      // 以太坊
     {
       label: 'Ethereum',
       type: 'category',
       items: [
+          // 学习资料汇总
+          'blockchains/ethereum/ethereum_resource',
         {
           label: 'solidity',
           type: 'category',
@@ -569,21 +572,21 @@ const sidebars = {
       label: 'Solana',
       type: 'category',
       items: [
-        'rust_contract/solana/solana_core_concepts/核心概念',
-        'rust_contract/solana/solana_workflow/项目设置',
-        'rust_contract/solana/solana_workflow/编写合约',
-        'rust_contract/solana/solana_workflow/跨合约调用',
-        'rust_contract/solana/solana_workflow/程序派生地址',
-        'rust_contract/solana/solana_workflow/编写测试',
-        'rust_contract/solana/solana_workflow/部署合约',
+        'blockchains/solana/solana_core_concepts/核心概念',
+        'blockchains/solana/solana_workflow/项目设置',
+        'blockchains/solana/solana_workflow/编写合约',
+        'blockchains/solana/solana_workflow/跨合约调用',
+        'blockchains/solana/solana_workflow/程序派生地址',
+        'blockchains/solana/solana_workflow/编写测试',
+        'blockchains/solana/solana_workflow/部署合约',
         {
           label: 'solana项目实战',
           type: 'category',
           items: [
-            'rust_contract/solana/solana_项目/blog_dapp_by_anchor',
-            'rust_contract/solana/solana_项目/crowdfunding_dapp',
-            'rust_contract/solana/solana_项目/crypto_currency',
-            'rust_contract/solana/solana_项目/mail_dapp',
+            'blockchains/solana/solana_项目/blog_dapp_by_anchor',
+            'blockchains/solana/solana_项目/crowdfunding_dapp',
+            'blockchains/solana/solana_项目/crypto_currency',
+            'blockchains/solana/solana_项目/mail_dapp',
           ],
         },
       ]

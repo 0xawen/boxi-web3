@@ -137,7 +137,7 @@ const config = {
               },
               {
                 label: 'blockchains',
-                to: '/docs/blockchain/info',
+                to: '/docs/blockchains/info',
               },
             ],
           },
