@@ -9,7 +9,7 @@ const beian = '粤IPC备2022098206'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'web3技能树',
+  title: 'web3 tools',
   tagline: 'by boxi',
   url: 'http://boxismartcontracts.com',
   baseUrl: '/',
@@ -66,73 +66,41 @@ const config = {
           src: 'img/头像.jpg',
         },
         items: [
+            // 介绍
           {
             label: 'introduction',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'introSidebar',
           },
+            // 编程基础
           {
             label: 'programing_basics',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'program_basics',
           },
-          // node
-          // {
-          //   label: 'node.js',
-          //   position: 'left',
-          //   type: 'docSidebar',
-          //   sidebarId: 'node',
-          // },
-          // {
-          //   label: 'typescript',
-          //   position: 'left',
-          //   type: 'docSidebar',
-          //   sidebarId: 'ts',
-          // },
+            // 前后端
           {
-            label: 'rust',
+            label: 'frontend_and_backend',
             position: 'left',
             type: 'docSidebar',
-            sidebarId: 'rust',
+            sidebarId: 'frontend_and_backend',
           },
-          // {
-          //   label: 'go',
-          //   position: 'left',
-          //   type: 'docSidebar',
-          //   sidebarId: 'go',
-          // },
+            // 区块链
           {
-            label: 'solidity',
+            label: 'blockchains',
             position: 'left',
             type: 'docSidebar',
-            sidebarId: 'solidity',
+            sidebarId: 'blockchains',
           },
-          {
-            label: 'rust_contract',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'rust_contract',
-          },
-          {
-            label: 'move',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'move',
-          },
+            // 零知识证明
           {
             label: 'zero_knowledge_proofs',
             position: 'left',
             type: 'docSidebar',
             sidebarId: 'zeroKnowledgeProofs'
           },
-          // {
-          //   label: 'blockchain',
-          //   position: 'left',
-          //   type: 'docSidebar',
-          //   sidebarId: 'blockchain',
-          // },
           {
             to: '/blog',
             label: 'Blog',
