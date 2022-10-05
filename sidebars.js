@@ -93,7 +93,7 @@ const sidebars = {
       label: '开发工具',
       type: 'category',
       items: [
-        'program_basics/开发环境',
+        'program_basics/dev_tools/tools',
       ]
     },
   ],
@@ -354,12 +354,11 @@ const sidebars = {
       type: 'category',
       items: [
           // 学习资料汇总
-          'blockchains/ethereum/ethereum_resource',
+        'blockchains/ethereum/ethereum_resource',
         {
-          label: 'solidity',
+          label: 'solidity合约开发',
           type: 'category',
           items: [
-            'solidity/info',
             {
               label: 'solidity基础语法',
               type: 'category',
@@ -565,6 +564,15 @@ const sidebars = {
               ]
             },
           ]
+        },
+        'blockchains/ethereum/eth_node',
+        'blockchains/ethereum/eth_client',
+        {
+          label: '区块数据分析',
+          type: 'category',
+          items: [
+            'blockchains/ethereum/data_analytics/data_analytics',
+          ],
         },
       ]
     },
