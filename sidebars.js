@@ -492,20 +492,20 @@ const sidebars = {
               label: 'solidity智能合约开发工具集',
               type: 'category',
               items: [
-                'solidity/solidity_test_tools/foundry',
-                'solidity/solidity_test_tools/embark',
                 {
                   label: 'hardhat项目工具',
                   type: 'category',
                   items: [
-                    'solidity/hardhat_workflow/hardhat_project_setting',
-                    'solidity/hardhat_workflow/write_and_compiling',
-                    'solidity/hardhat_workflow/testing_contract',
-                    'solidity/hardhat_workflow/deploy_contracts',
-                    'solidity/hardhat_workflow/connect_test_networks',
-                    'solidity/hardhat_workflow/upgrading_contract',
+                    'solidity/solidity_test_tools/hardhat_workflow/hardhat_project_setting',
+                    'solidity/solidity_test_tools/hardhat_workflow/write_and_compiling',
+                    'solidity/solidity_test_tools/hardhat_workflow/testing_contract',
+                    'solidity/solidity_test_tools/hardhat_workflow/deploy_contracts',
+                    'solidity/solidity_test_tools/hardhat_workflow/connect_test_networks',
+                    'solidity/solidity_test_tools/hardhat_workflow/upgrading_contract',
                   ],
                 },
+                'solidity/solidity_test_tools/foundry',
+                'solidity/solidity_test_tools/embark',
               ],
             },
             {
@@ -519,6 +519,7 @@ const sidebars = {
               label: 'solidity智能合约安全',
               type: 'category',
               items: [
+                'solidity/solidity_security/security_tools',
                 {
                   label: 'solidity漏洞',
                   type: 'category',
@@ -539,13 +540,6 @@ const sidebars = {
                     'solidity/solidity_security/solidity_hack/signature_replay',
                     'solidity/solidity_security/solidity_hack/bypass_contract_size_check',
                   ]
-                },
-                {
-                  label: '合约安全测试工具',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_security/security_tools',
-                  ],
                 },
               ],
             },
