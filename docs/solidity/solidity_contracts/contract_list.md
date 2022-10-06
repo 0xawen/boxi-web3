@@ -22,7 +22,7 @@ Library contracts for Ethereum， 类比openzepplelink
 
 https://github.com/Modular-Network/ethereum-libraries
 
-## 仓库 - 去中心话交换协议协议DEX
+## 仓库 - DEX
 
 https://github.com/0xProject
 

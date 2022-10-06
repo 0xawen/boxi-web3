@@ -411,6 +411,7 @@ const sidebars = {
               label: 'solidity智能合约标准和类库',
               type: 'category',
               items: [
+                'solidity/solidity_contracts/eips/eips',
                 'solidity/solidity_contracts/contract_list',
                 {
                   label: '合约库-常见合约',
@@ -473,13 +474,13 @@ const sidebars = {
                     'solidity/solidity_contracts/defi/uniswap',
                   ]
                 },
-                // {
-                //   label: '合约库-nft',
-                //   type: 'category',
-                //   items: [
-                //     'solidity/solidity_contracts/defi/info'
-                //   ]
-                // },
+                {
+                  label: '合约库-NFT',
+                  type: 'category',
+                  items: [
+                    'solidity/solidity_contracts/nft/nft'
+                  ]
+                },
                 {
                   label: '合约库-Dao',
                   type: 'category',
@@ -508,6 +509,7 @@ const sidebars = {
               label: 'solidity智能合约开发工具集',
               type: 'category',
               items: [
+                'solidity/solidity_test_tools/foundry',
                 {
                   label: 'hardhat项目工具',
                   type: 'category',
@@ -520,7 +522,6 @@ const sidebars = {
                     'solidity/solidity_test_tools/hardhat_workflow/upgrading_contract',
                   ],
                 },
-                'solidity/solidity_test_tools/foundry',
                 'solidity/solidity_test_tools/embark',
               ],
             },
