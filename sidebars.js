@@ -566,6 +566,10 @@ const sidebars = {
           type: 'category',
           items: [
             'blockchains/ethereum/data_analytics/data_analytics',
+            'blockchains/ethereum/data_analytics/alethio',
+            'blockchains/ethereum/data_analytics/amberdataio',
+            'blockchains/ethereum/data_analytics/neufund',
+            'blockchains/ethereum/data_analytics/tenderly',
           ],
         },
       ]
