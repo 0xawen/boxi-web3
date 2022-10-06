@@ -24,12 +24,6 @@ Terminal - 用于监视dapp的控制面板。终端可用于监视用户，dapp�
 
 Ethereum-watcher - 用Golang编写的可扩展框架，用于侦听链上事件并做一些响应
 
-
-https://github.com/Alethio/ethereum-lite-explorer
-
-【Open-source Ethereum data scraper and indexer developed by Alethio】
-https://github.com/Alethio/memento
-
 ## 谷歌系列的的区块链数据分析项目
 
 区块数据分析架构设计和实现：

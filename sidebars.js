@@ -570,6 +570,9 @@ const sidebars = {
             'blockchains/ethereum/data_analytics/amberdataio',
             'blockchains/ethereum/data_analytics/neufund',
             'blockchains/ethereum/data_analytics/tenderly',
+            'blockchains/ethereum/data_analytics/blockscout',
+            'blockchains/ethereum/data_analytics/terminal',
+            'blockchains/ethereum/data_analytics/数据解析工具',
           ],
         },
       ]
