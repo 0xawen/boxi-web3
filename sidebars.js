@@ -37,6 +37,24 @@ const sidebars = {
   program_basics: [
     'program_basics/info',
     {
+      label: '数据结构',
+      type: 'category',
+      items: [
+        'program_basics/data_structures/info',
+        'program_basics/data_structures/链表',
+        'program_basics/data_structures/数组',
+        'program_basics/data_structures/二叉树',
+        'program_basics/data_structures/图',
+      ]
+    },
+    {
+      label: '算法',
+      type: 'category',
+      items: [
+        'program_basics/algorithms/info',
+      ]
+    },
+    {
       label: '操作系统',
       type: 'category',
       items: [
@@ -55,24 +73,6 @@ const sidebars = {
         'program_basics/network/info',
         'program_basics/network/tcp',
         'program_basics/network/udp',
-      ]
-    },
-    {
-      label: '数据结构',
-      type: 'category',
-      items: [
-        'program_basics/data_structures/info',
-        'program_basics/data_structures/链表',
-        'program_basics/data_structures/数组',
-        'program_basics/data_structures/二叉树',
-        'program_basics/data_structures/图',
-      ]
-    },
-    {
-      label: '算法',
-      type: 'category',
-      items: [
-        'program_basics/algorithms/info',
       ]
     },
     {
@@ -110,6 +110,7 @@ const sidebars = {
       type: 'category',
       items: [
         'go/info',
+        'go/编程模式-option',
       ]
     },
     // rust
@@ -343,7 +344,6 @@ const sidebars = {
         'rust/learn_project'
       ]
     },
-
   ],
 
   // 区块链
