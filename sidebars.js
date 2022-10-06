@@ -411,8 +411,9 @@ const sidebars = {
               label: 'solidity智能合约标准和类库',
               type: 'category',
               items: [
+                'solidity/solidity_contracts/contract_list',
                 {
-                  label: '合约库1-常见合约',
+                  label: '合约库-常见合约',
                   type: 'category',
                   items: [
                     'solidity/solidity_contracts/application/README',
@@ -443,7 +444,7 @@ const sidebars = {
                   ]
                 },
                 {
-                  label: '合约库2-openzeppelin',
+                  label: '合约库-openzeppelin',
                   type: 'category',
                   items: [
                     'solidity/solidity_contracts/openzepplin/access_control',
@@ -457,7 +458,7 @@ const sidebars = {
                   ]
                 },
                 {
-                  label: '合约库3-可升级合约库',
+                  label: '合约库-可升级合约库',
                   type: 'category',
                   items: [
                     'solidity/solidity_contracts/upgradeable/可升级合约',
@@ -465,7 +466,7 @@ const sidebars = {
                   ]
                 },
                 {
-                  label: '合约库4-Defi',
+                  label: '合约库-Defi/DEX',
                   type: 'category',
                   items: [
                     'solidity/solidity_contracts/defi/info',
@@ -473,12 +474,27 @@ const sidebars = {
                   ]
                 },
                 // {
-                //   label: '合约库5-nft',
+                //   label: '合约库-nft',
                 //   type: 'category',
                 //   items: [
                 //     'solidity/solidity_contracts/defi/info'
                 //   ]
                 // },
+                {
+                  label: '合约库-Dao',
+                  type: 'category',
+                  items: [
+                    // todo
+                    'solidity/solidity_contracts/contract_list',
+                  ],
+                },
+                {
+                  label: '合约库-SoulBoundToken',
+                  type: 'category',
+                  items: [
+                    'solidity/solidity_contracts/soulbound_token',
+                  ]
+                },
                 {
                   label: '合约开发最佳做法',
                   type: 'category',
