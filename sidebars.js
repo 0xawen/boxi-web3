@@ -509,16 +509,10 @@ const sidebars = {
               ],
             },
             {
-              label: 'solidity智能合约设计模式',
-              type: 'category',
-              items: [
-                'solidity/solidity_patterns/info'
-              ]
-            },
-            {
               label: 'solidity智能合约安全',
               type: 'category',
               items: [
+                 'solidity/solidity_security/solidity_sercurity_resource',
                 'solidity/solidity_security/security_tools',
                 {
                   label: 'solidity漏洞',
@@ -542,6 +536,13 @@ const sidebars = {
                   ]
                 },
               ],
+            },
+            {
+              label: 'solidity智能合约设计模式',
+              type: 'category',
+              items: [
+                'solidity/solidity_patterns/info'
+              ]
             },
             {
               label: 'solidity项目实战',

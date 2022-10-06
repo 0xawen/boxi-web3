@@ -1,7 +1,5 @@
 # 合约安全工具汇总
 
-
-
 - [MythX](https://mythx.io/) - 以太坊开发人员的安全验证平台和工具生态系统
 - [Mythril](https://github.com/ConsenSys/mythril) - 开源EVM字节码安全性分析工具
 - [Oyente](https://github.com/melonproject/oyente) - 替代静态智能合约安全性分析
