@@ -98,26 +98,60 @@ const sidebars = {
     },
   ],
 
-  // 前端/后端开发语言
-  frontend_and_backend: [
-    // node
-    //{},
-    // type scripts
-    //{},
-    // go
+  // 零知识证明
+  zeroKnowledgeProofs : [
+    'zero_knowledge_proofs/info',
     {
-      label: 'Go',
+      label:'zk-snarks**(常见)',
       type: 'category',
       items: [
-        'go/info',
-        'go/编程模式-option',
+        'zero_knowledge_proofs/snarks',
+        'zero_knowledge_proofs/groth16',
+        'zero_knowledge_proofs/bellman库',
+        'zero_knowledge_proofs/bellman示例1',
+        'zero_knowledge_proofs/libsnark库',
+        'zero_knowledge_proofs/zokrates',
+        'zero_knowledge_proofs/zkinterface库',
       ]
     },
-    // rust
     {
-      label: 'Rust',
+      label:'zk-snorks(常见)',
       type: 'category',
       items: [
+        'zero_knowledge_proofs/snorks',
+      ]
+    },
+    {
+      label:'zk-bulletproof(常见)',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/bulletproof',
+      ]
+    },
+    {
+      label:'zk-starks',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/starks',
+      ]
+    },
+    {
+      label:'zkp生态应用',
+      type: 'category',
+      items: [
+        'zero_knowledge_proofs/zk_application',
+      ]
+    },
+  ],
+
+  // Go
+  Go : [
+      'go/info',
+      'go/编程模式-option',
+  ],
+  // Rust
+  Rust : [
+    // rust
         'rust/why_rust',
         'rust/info',
         {
@@ -342,241 +376,236 @@ const sidebars = {
           ]
         },
         'rust/learn_project'
-      ]
-    },
   ],
 
-  // 区块链
-  blockchains: [
-      // 以太坊
+    // Solidity
+  Solidity: [
+    {
+            label: 'solidity基础语法',
+            type: 'category',
+            items: [
+              'solidity/solidity_basic/hello_world',
+              'solidity/solidity_basic/first_app',
+              'solidity/solidity_basic/primitive_data_types',
+              'solidity/solidity_basic/variables',
+              'solidity/solidity_basic/constants',
+              'solidity/solidity_basic/immutable',
+              'solidity/solidity_basic/read_and_write_state_variable',
+              'solidity/solidity_basic/ether_and_wei',
+              'solidity/solidity_basic/gas',
+              'solidity/solidity_basic/if_else',
+              'solidity/solidity_basic/for_while',
+              'solidity/solidity_basic/mapping',
+              'solidity/solidity_basic/array',
+              'solidity/solidity_basic/enum',
+              'solidity/solidity_basic/structs',
+              'solidity/solidity_basic/data_locations',
+              'solidity/solidity_basic/function',
+              'solidity/solidity_basic/view_and_pure_functions',
+              'solidity/solidity_basic/error',
+              'solidity/solidity_basic/function_modifier',
+              'solidity/solidity_basic/events',
+              'solidity/solidity_basic/constructor',
+              'solidity/solidity_basic/inheritance',
+              'solidity/solidity_basic/shadowing_inherited_state_variables',
+              'solidity/solidity_basic/calling_parent_contracts',
+              'solidity/solidity_basic/visibility',
+              'solidity/solidity_basic/interface',
+              'solidity/solidity_basic/payable',
+              'solidity/solidity_basic/sending_eth',
+              'solidity/solidity_basic/fallback',
+              'solidity/solidity_basic/call',
+              'solidity/solidity_basic/delegatecall',
+              'solidity/solidity_basic/function_selector',
+              'solidity/solidity_basic/calling_other_contract',
+              'solidity/solidity_basic/create_other_contracts',
+              'solidity/solidity_basic/try_catch',
+              'solidity/solidity_basic/import',
+              'solidity/solidity_basic/library',
+              'solidity/solidity_basic/abi_decode',
+              'solidity/solidity_basic/hashing_with_keccak256',
+              'solidity/solidity_basic/verifying_signature',
+              'solidity/solidity_basic/gas_saving_techniques'
+            ],
+          },
+    {
+            label: 'solidity智能合约标准和类库',
+            type: 'category',
+            items: [
+              'solidity/solidity_contracts/eips/eips',
+              'solidity/solidity_contracts/contract_list',
+              {
+                label: '合约库-常见合约',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/application/README',
+                  'solidity/solidity_contracts/application/ether_wallet',
+                  'solidity/solidity_contracts/application/multi_sig_wallet',
+                  'solidity/solidity_contracts/application/merkle_tree',
+                  'solidity/solidity_contracts/application/iterable_mapping',
+                  'solidity/solidity_contracts/application/erc20',
+                  'solidity/solidity_contracts/application/erc721',
+                  'solidity/solidity_contracts/application/precompute_contract_address',
+                  'solidity/solidity_contracts/application/minimal_proxy_contract',
+                  'solidity/solidity_contracts/application/upgradeable_contract',
+                  'solidity/solidity_contracts/application/deploy_any_contract',
+                  'solidity/solidity_contracts/application/write_any_slot',
+                  'solidity/solidity_contracts/application/uni-directional_payment_channel',
+                  'solidity/solidity_contracts/application/bi-directional_payment_channel',
+                  'solidity/solidity_contracts/application/english_auction',
+                  'solidity/solidity_contracts/application/dutch_auction',
+                  'solidity/solidity_contracts/application/minimal_proxy_contract',
+                  'solidity/solidity_contracts/application/multi_call',
+                  'solidity/solidity_contracts/application/multi_delegatecall',
+                  'solidity/solidity_contracts/application/time_lock',
+                  'solidity/solidity_contracts/application/airdrop',
+                  'solidity/solidity_contracts/application/weth',
+                  'solidity/solidity_contracts/application/paymentsplit',
+                  'solidity/solidity_contracts/application/nftswap',
+                  'solidity/solidity_contracts/application/tokenlocker',
+                ]
+              },
+              {
+                label: '合约库-openzeppelin',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/openzepplin/access_control',
+                  'solidity/solidity_contracts/openzepplin/02.1_erc20',
+                  'solidity/solidity_contracts/openzepplin/02.2_erc721',
+                  'solidity/solidity_contracts/openzepplin/02.3_erc777',
+                  'solidity/solidity_contracts/openzepplin/02.4_erc1155',
+                  'solidity/solidity_contracts/openzepplin/governance',
+                  'solidity/solidity_contracts/openzepplin/crosschain',
+                  'solidity/solidity_contracts/openzepplin/uitilities',
+                ]
+              },
+              {
+                label: '合约库-可升级合约库',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/upgradeable/可升级合约',
+                  'solidity/solidity_contracts/upgradeable/erc20-upgradeable-example',
+                ]
+              },
+              {
+                label: '合约库-Defi/DEX',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/defi/info',
+                  'solidity/solidity_contracts/defi/uniswap',
+                ]
+              },
+              {
+                label: '合约库-NFT',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/nft/nft'
+                ]
+              },
+              {
+                label: '合约库-Dao',
+                type: 'category',
+                items: [
+                  // todo
+                  'solidity/solidity_contracts/contract_list',
+                ],
+              },
+              {
+                label: '合约库-SoulBoundToken',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/soulbound_token',
+                ]
+              },
+              {
+                label: '合约开发最佳做法',
+                type: 'category',
+                items: [
+                  'solidity/solidity_contracts/best_practice/info',
+                ],
+              },
+            ]
+          },
+    {
+            label: 'solidity智能合约开发工具集',
+            type: 'category',
+            items: [
+              'solidity/solidity_test_tools/foundry',
+              {
+                label: 'hardhat项目工具',
+                type: 'category',
+                items: [
+                  'solidity/solidity_test_tools/hardhat_workflow/hardhat_project_setting',
+                  'solidity/solidity_test_tools/hardhat_workflow/write_and_compiling',
+                  'solidity/solidity_test_tools/hardhat_workflow/testing_contract',
+                  'solidity/solidity_test_tools/hardhat_workflow/deploy_contracts',
+                  'solidity/solidity_test_tools/hardhat_workflow/connect_test_networks',
+                  'solidity/solidity_test_tools/hardhat_workflow/upgrading_contract',
+                ],
+              },
+              'solidity/solidity_test_tools/embark',
+            ],
+          },
+    {
+            label: 'solidity智能合约安全',
+            type: 'category',
+            items: [
+              'solidity/solidity_security/solidity_sercurity_resource',
+              'solidity/solidity_security/security_tools',
+              {
+                label: 'solidity漏洞',
+                type: 'category',
+                items: [
+                  'solidity/solidity_security/solidity_hack/README',
+                  'solidity/solidity_security/solidity_hack/re_entrancy',
+                  'solidity/solidity_security/solidity_hack/arithmetic_overflow_underflow',
+                  'solidity/solidity_security/solidity_hack/self_destruct',
+                  'solidity/solidity_security/solidity_hack/access_private_data',
+                  'solidity/solidity_security/solidity_hack/delegatecall',
+                  'solidity/solidity_security/solidity_hack/source_of_randomness',
+                  'solidity/solidity_security/solidity_hack/denial_of_service',
+                  'solidity/solidity_security/solidity_hack/phishing_with_tx_orgin',
+                  'solidity/solidity_security/solidity_hack/hiding_malicious_code_with_external_contract',
+                  'solidity/solidity_security/solidity_hack/honeypot',
+                  'solidity/solidity_security/solidity_hack/front_running',
+                  'solidity/solidity_security/solidity_hack/block_timestamp_manipulation',
+                  'solidity/solidity_security/solidity_hack/signature_replay',
+                  'solidity/solidity_security/solidity_hack/bypass_contract_size_check',
+                ]
+              },
+            ],
+          },
+    {
+            label: 'solidity智能合约设计模式',
+            type: 'category',
+            items: [
+              'solidity/solidity_patterns/info'
+            ]
+          },
+    {
+            label: 'solidity项目实战',
+            type: 'category',
+            items: [
+              'solidity/solidity_project/project',
+            ]
+          },
+    {
+            label: 'EVM',
+            type: 'category',
+            items: [
+              'solidity/evm/info'
+            ]
+          },
+  ],
+
+  // Ethereum
+  Ethereum: [
     {
       label: 'Ethereum',
       type: 'category',
       items: [
-          // 学习资料汇总
+        // 学习资料汇总
         'blockchains/ethereum/ethereum_resource',
-        {
-          label: 'solidity合约开发',
-          type: 'category',
-          items: [
-            {
-              label: 'solidity基础语法',
-              type: 'category',
-              items: [
-                'solidity/solidity_basic/hello_world',
-                'solidity/solidity_basic/first_app',
-                'solidity/solidity_basic/primitive_data_types',
-                'solidity/solidity_basic/variables',
-                'solidity/solidity_basic/constants',
-                'solidity/solidity_basic/immutable',
-                'solidity/solidity_basic/read_and_write_state_variable',
-                'solidity/solidity_basic/ether_and_wei',
-                'solidity/solidity_basic/gas',
-                'solidity/solidity_basic/if_else',
-                'solidity/solidity_basic/for_while',
-                'solidity/solidity_basic/mapping',
-                'solidity/solidity_basic/array',
-                'solidity/solidity_basic/enum',
-                'solidity/solidity_basic/structs',
-                'solidity/solidity_basic/data_locations',
-                'solidity/solidity_basic/function',
-                'solidity/solidity_basic/view_and_pure_functions',
-                'solidity/solidity_basic/error',
-                'solidity/solidity_basic/function_modifier',
-                'solidity/solidity_basic/events',
-                'solidity/solidity_basic/constructor',
-                'solidity/solidity_basic/inheritance',
-                'solidity/solidity_basic/shadowing_inherited_state_variables',
-                'solidity/solidity_basic/calling_parent_contracts',
-                'solidity/solidity_basic/visibility',
-                'solidity/solidity_basic/interface',
-                'solidity/solidity_basic/payable',
-                'solidity/solidity_basic/sending_eth',
-                'solidity/solidity_basic/fallback',
-                'solidity/solidity_basic/call',
-                'solidity/solidity_basic/delegatecall',
-                'solidity/solidity_basic/function_selector',
-                'solidity/solidity_basic/calling_other_contract',
-                'solidity/solidity_basic/create_other_contracts',
-                'solidity/solidity_basic/try_catch',
-                'solidity/solidity_basic/import',
-                'solidity/solidity_basic/library',
-                'solidity/solidity_basic/abi_decode',
-                'solidity/solidity_basic/hashing_with_keccak256',
-                'solidity/solidity_basic/verifying_signature',
-                'solidity/solidity_basic/gas_saving_techniques'
-              ],
-            },
-            {
-              label: 'solidity智能合约标准和类库',
-              type: 'category',
-              items: [
-                'solidity/solidity_contracts/eips/eips',
-                'solidity/solidity_contracts/contract_list',
-                {
-                  label: '合约库-常见合约',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/application/README',
-                    'solidity/solidity_contracts/application/ether_wallet',
-                    'solidity/solidity_contracts/application/multi_sig_wallet',
-                    'solidity/solidity_contracts/application/merkle_tree',
-                    'solidity/solidity_contracts/application/iterable_mapping',
-                    'solidity/solidity_contracts/application/erc20',
-                    'solidity/solidity_contracts/application/erc721',
-                    'solidity/solidity_contracts/application/precompute_contract_address',
-                    'solidity/solidity_contracts/application/minimal_proxy_contract',
-                    'solidity/solidity_contracts/application/upgradeable_contract',
-                    'solidity/solidity_contracts/application/deploy_any_contract',
-                    'solidity/solidity_contracts/application/write_any_slot',
-                    'solidity/solidity_contracts/application/uni-directional_payment_channel',
-                    'solidity/solidity_contracts/application/bi-directional_payment_channel',
-                    'solidity/solidity_contracts/application/english_auction',
-                    'solidity/solidity_contracts/application/dutch_auction',
-                    'solidity/solidity_contracts/application/minimal_proxy_contract',
-                    'solidity/solidity_contracts/application/multi_call',
-                    'solidity/solidity_contracts/application/multi_delegatecall',
-                    'solidity/solidity_contracts/application/time_lock',
-                    'solidity/solidity_contracts/application/airdrop',
-                    'solidity/solidity_contracts/application/weth',
-                    'solidity/solidity_contracts/application/paymentsplit',
-                    'solidity/solidity_contracts/application/nftswap',
-                    'solidity/solidity_contracts/application/tokenlocker',
-                  ]
-                },
-                {
-                  label: '合约库-openzeppelin',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/openzepplin/access_control',
-                    'solidity/solidity_contracts/openzepplin/02.1_erc20',
-                    'solidity/solidity_contracts/openzepplin/02.2_erc721',
-                    'solidity/solidity_contracts/openzepplin/02.3_erc777',
-                    'solidity/solidity_contracts/openzepplin/02.4_erc1155',
-                    'solidity/solidity_contracts/openzepplin/governance',
-                    'solidity/solidity_contracts/openzepplin/crosschain',
-                    'solidity/solidity_contracts/openzepplin/uitilities',
-                  ]
-                },
-                {
-                  label: '合约库-可升级合约库',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/upgradeable/可升级合约',
-                    'solidity/solidity_contracts/upgradeable/erc20-upgradeable-example',
-                  ]
-                },
-                {
-                  label: '合约库-Defi/DEX',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/defi/info',
-                    'solidity/solidity_contracts/defi/uniswap',
-                  ]
-                },
-                {
-                  label: '合约库-NFT',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/nft/nft'
-                  ]
-                },
-                {
-                  label: '合约库-Dao',
-                  type: 'category',
-                  items: [
-                    // todo
-                    'solidity/solidity_contracts/contract_list',
-                  ],
-                },
-                {
-                  label: '合约库-SoulBoundToken',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/soulbound_token',
-                  ]
-                },
-                {
-                  label: '合约开发最佳做法',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_contracts/best_practice/info',
-                  ],
-                },
-              ]
-            },
-            {
-              label: 'solidity智能合约开发工具集',
-              type: 'category',
-              items: [
-                'solidity/solidity_test_tools/foundry',
-                {
-                  label: 'hardhat项目工具',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_test_tools/hardhat_workflow/hardhat_project_setting',
-                    'solidity/solidity_test_tools/hardhat_workflow/write_and_compiling',
-                    'solidity/solidity_test_tools/hardhat_workflow/testing_contract',
-                    'solidity/solidity_test_tools/hardhat_workflow/deploy_contracts',
-                    'solidity/solidity_test_tools/hardhat_workflow/connect_test_networks',
-                    'solidity/solidity_test_tools/hardhat_workflow/upgrading_contract',
-                  ],
-                },
-                'solidity/solidity_test_tools/embark',
-              ],
-            },
-            {
-              label: 'solidity智能合约安全',
-              type: 'category',
-              items: [
-                 'solidity/solidity_security/solidity_sercurity_resource',
-                'solidity/solidity_security/security_tools',
-                {
-                  label: 'solidity漏洞',
-                  type: 'category',
-                  items: [
-                    'solidity/solidity_security/solidity_hack/README',
-                    'solidity/solidity_security/solidity_hack/re_entrancy',
-                    'solidity/solidity_security/solidity_hack/arithmetic_overflow_underflow',
-                    'solidity/solidity_security/solidity_hack/self_destruct',
-                    'solidity/solidity_security/solidity_hack/access_private_data',
-                    'solidity/solidity_security/solidity_hack/delegatecall',
-                    'solidity/solidity_security/solidity_hack/source_of_randomness',
-                    'solidity/solidity_security/solidity_hack/denial_of_service',
-                    'solidity/solidity_security/solidity_hack/phishing_with_tx_orgin',
-                    'solidity/solidity_security/solidity_hack/hiding_malicious_code_with_external_contract',
-                    'solidity/solidity_security/solidity_hack/honeypot',
-                    'solidity/solidity_security/solidity_hack/front_running',
-                    'solidity/solidity_security/solidity_hack/block_timestamp_manipulation',
-                    'solidity/solidity_security/solidity_hack/signature_replay',
-                    'solidity/solidity_security/solidity_hack/bypass_contract_size_check',
-                  ]
-                },
-              ],
-            },
-            {
-              label: 'solidity智能合约设计模式',
-              type: 'category',
-              items: [
-                'solidity/solidity_patterns/info'
-              ]
-            },
-            {
-              label: 'solidity项目实战',
-              type: 'category',
-              items: [
-                'solidity/solidity_project/project',
-              ]
-            },
-            {
-              label: 'EVM',
-              type: 'category',
-              items: [
-                'solidity/evm/info'
-              ]
-            },
-          ]
-        },
         'blockchains/ethereum/eth_node',
         'blockchains/ethereum/eth_client',
         {
@@ -595,115 +624,36 @@ const sidebars = {
         },
       ]
     },
-    {
-      label: 'Solana',
-      type: 'category',
-      items: [
-        'blockchains/solana/solana_core_concepts/核心概念',
-        'blockchains/solana/solana_workflow/项目设置',
-        'blockchains/solana/solana_workflow/编写合约',
-        'blockchains/solana/solana_workflow/跨合约调用',
-        'blockchains/solana/solana_workflow/程序派生地址',
-        'blockchains/solana/solana_workflow/编写测试',
-        'blockchains/solana/solana_workflow/部署合约',
-        {
-          label: 'solana项目实战',
-          type: 'category',
-          items: [
-            'blockchains/solana/solana_项目/blog_dapp_by_anchor',
-            'blockchains/solana/solana_项目/crowdfunding_dapp',
-            'blockchains/solana/solana_项目/crypto_currency',
-            'blockchains/solana/solana_项目/mail_dapp',
-          ],
-        },
-      ]
-    },
-    {
-      label: 'Aptos',
-      type: 'category',
-      items: [
-        'move/info',
-        {
-          label: 'move语法基础',
-          type: 'category',
-          items: [
-            'move/move_basic/模块与脚本',
-            'move/move_basic/第一个教程创建coins',
-            'move/move_basic/整数',
-            'move/move_basic/布尔类型',
-            'move/move_basic/地址',
-            'move/move_basic/动态数组',
-            'move/move_basic/签名者',
-            'move/move_basic/引用',
-            'move/move_basic/元组',
-            'move/move_basic/局部变量和作用域',
-            'move/move_basic/相等操作',
-            'move/move_basic/abort和assert',
-            'move/move_basic/条件',
-            'move/move_basic/循环',
-            'move/move_basic/函数',
-            'move/move_basic/结构体和资源',
-            'move/move_basic/常量',
-            'move/move_basic/泛型',
-            'move/move_basic/类型能力',
-            'move/move_basic/use和alias',
-            'move/move_basic/friend',
-            'move/move_basic/包',
-            'move/move_basic/单元测试',
-            'move/move_basic/全局存储',
-            'move/move_basic/全局存储操作',
-          ]
-        }
-      ]
-    },
   ],
 
-  // 零知识证明
-  zeroKnowledgeProofs : [
-    'zero_knowledge_proofs/info',
-    {
-      label:'zk-snarks**(常见)',
-      type: 'category',
-      items: [
-        'zero_knowledge_proofs/snarks',
-        'zero_knowledge_proofs/groth16',
-        'zero_knowledge_proofs/bellman库',
-        'zero_knowledge_proofs/bellman示例1',
-        'zero_knowledge_proofs/libsnark库',
-        'zero_knowledge_proofs/zokrates',
-        'zero_knowledge_proofs/zkinterface库',
-      ]
-    },
-    {
-      label:'zk-snorks(常见)',
-      type: 'category',
-      items: [
-        'zero_knowledge_proofs/snorks',
-      ]
-    },
-    {
-      label:'zk-bulletproof(常见)',
-      type: 'category',
-      items: [
-        'zero_knowledge_proofs/bulletproof',
-      ]
-    },
-    {
-      label:'zk-starks',
-      type: 'category',
-      items: [
-        'zero_knowledge_proofs/starks',
-      ]
-    },
-    {
-      label:'zkp生态应用',
-      type: 'category',
-      items: [
-        'zero_knowledge_proofs/zk_application',
-      ]
-    },
+  // Move
+  Move: [
+    'move/move_basic/模块与脚本',
+    'move/move_basic/第一个教程创建coins',
+    'move/move_basic/整数',
+    'move/move_basic/布尔类型',
+    'move/move_basic/地址',
+    'move/move_basic/动态数组',
+    'move/move_basic/签名者',
+    'move/move_basic/引用',
+    'move/move_basic/元组',
+    'move/move_basic/局部变量和作用域',
+    'move/move_basic/相等操作',
+    'move/move_basic/abort和assert',
+    'move/move_basic/条件',
+    'move/move_basic/循环',
+    'move/move_basic/函数',
+    'move/move_basic/结构体和资源',
+    'move/move_basic/常量',
+    'move/move_basic/泛型',
+    'move/move_basic/类型能力',
+    'move/move_basic/use和alias',
+    'move/move_basic/friend',
+    'move/move_basic/包',
+    'move/move_basic/单元测试',
+    'move/move_basic/全局存储',
+    'move/move_basic/全局存储操作',
   ],
-
 };
 
 module.exports = sidebars;

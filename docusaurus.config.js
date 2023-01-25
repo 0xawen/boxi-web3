@@ -9,7 +9,7 @@ const beian = '粤IPC备2022098206'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'web3 tools',
+  title: 'web3',
   tagline: 'by boxi',
   url: 'http://boxismartcontracts.com',
   baseUrl: '/',
@@ -74,33 +74,61 @@ const config = {
             sidebarId: 'introSidebar',
           },
             // 编程基础
+          // {
+          //   label: 'programing_basics',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'program_basics',
+          // },
+            // Go
           {
-            label: 'programing_basics',
+            label: 'Go',
             position: 'left',
             type: 'docSidebar',
-            sidebarId: 'program_basics',
+            sidebarId: 'Go',
           },
-            // 前后端
+            // Rust
+            {
+                label: 'Rust',
+                position: 'left',
+                type: 'docSidebar',
+                sidebarId: 'Rust',
+            },
+            // Solidity
+            {
+                label: 'Solidity',
+                position: 'left',
+                type: 'docSidebar',
+                sidebarId: 'Solidity',
+            },
+            // Ethereum
           {
-            label: 'frontend_and_backend',
+            label: 'Ethereum',
             position: 'left',
             type: 'docSidebar',
-            sidebarId: 'frontend_and_backend',
+            sidebarId: 'Ethereum',
+          },
+            // Move
+          {
+            label: 'Move',
+            position: 'left',
+            type: 'docSidebar',
+            sidebarId: 'Move',
           },
             // 区块链
-          {
-            label: 'blockchains',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'blockchains',
-          },
+          // {
+          //   label: 'blockchains',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'blockchains',
+          // },
             // 零知识证明
-          {
-            label: 'zero_knowledge_proofs',
-            position: 'left',
-            type: 'docSidebar',
-            sidebarId: 'zeroKnowledgeProofs'
-          },
+          // {
+          //   label: 'zero_knowledge_proofs',
+          //   position: 'left',
+          //   type: 'docSidebar',
+          //   sidebarId: 'zeroKnowledgeProofs'
+          // },
           {
             to: '/blog',
             label: 'Blog',
