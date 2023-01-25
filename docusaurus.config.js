@@ -152,20 +152,8 @@ const config = {
                 to: '/docs/rust/info',
               },
               {
-                label: 'solidity',
-                to: '/docs/solidity/info',
-              },
-              {
-                label: 'rust-contract',
-                to: '/docs/rust_contract/info',
-              },
-              {
                 label: 'move',
                 to: '/docs/move/info',
-              },
-              {
-                label: 'blockchains',
-                to: '/docs/blockchains/info',
               },
             ],
           },

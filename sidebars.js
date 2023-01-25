@@ -149,6 +149,7 @@ const sidebars = {
       'go/info',
       'go/编程模式-option',
   ],
+
   // Rust
   Rust : [
     // rust
@@ -378,8 +379,9 @@ const sidebars = {
         'rust/learn_project'
   ],
 
-    // Solidity
+  // Solidity
   Solidity: [
+    'solidity/solidity_resource',
     {
             label: 'solidity基础语法',
             type: 'category',
@@ -429,7 +431,27 @@ const sidebars = {
             ],
           },
     {
-            label: 'solidity智能合约标准和类库',
+      label: 'solidity智能合约开发工具集',
+      type: 'category',
+      items: [
+        {
+          label: 'hardhat框架',
+          type: 'category',
+          items: [
+            'solidity/solidity_test_tools/hardhat_workflow/hardhat_project_setting',
+            'solidity/solidity_test_tools/hardhat_workflow/write_and_compiling',
+            'solidity/solidity_test_tools/hardhat_workflow/testing_contract',
+            'solidity/solidity_test_tools/hardhat_workflow/deploy_contracts',
+            'solidity/solidity_test_tools/hardhat_workflow/connect_test_networks',
+            'solidity/solidity_test_tools/hardhat_workflow/upgrading_contract',
+          ],
+        },
+        'solidity/solidity_test_tools/foundry',
+        'solidity/solidity_test_tools/embark',
+      ],
+    },
+    {
+            label: 'solidity智能合约合约库',
             type: 'category',
             items: [
               'solidity/solidity_contracts/eips/eips',
@@ -527,26 +549,6 @@ const sidebars = {
             ]
           },
     {
-            label: 'solidity智能合约开发工具集',
-            type: 'category',
-            items: [
-              'solidity/solidity_test_tools/foundry',
-              {
-                label: 'hardhat项目工具',
-                type: 'category',
-                items: [
-                  'solidity/solidity_test_tools/hardhat_workflow/hardhat_project_setting',
-                  'solidity/solidity_test_tools/hardhat_workflow/write_and_compiling',
-                  'solidity/solidity_test_tools/hardhat_workflow/testing_contract',
-                  'solidity/solidity_test_tools/hardhat_workflow/deploy_contracts',
-                  'solidity/solidity_test_tools/hardhat_workflow/connect_test_networks',
-                  'solidity/solidity_test_tools/hardhat_workflow/upgrading_contract',
-                ],
-              },
-              'solidity/solidity_test_tools/embark',
-            ],
-          },
-    {
             label: 'solidity智能合约安全',
             type: 'category',
             items: [
@@ -628,31 +630,38 @@ const sidebars = {
 
   // Move
   Move: [
-    'move/move_basic/模块与脚本',
-    'move/move_basic/第一个教程创建coins',
-    'move/move_basic/整数',
-    'move/move_basic/布尔类型',
-    'move/move_basic/地址',
-    'move/move_basic/动态数组',
-    'move/move_basic/签名者',
-    'move/move_basic/引用',
-    'move/move_basic/元组',
-    'move/move_basic/局部变量和作用域',
-    'move/move_basic/相等操作',
-    'move/move_basic/abort和assert',
-    'move/move_basic/条件',
-    'move/move_basic/循环',
-    'move/move_basic/函数',
-    'move/move_basic/结构体和资源',
-    'move/move_basic/常量',
-    'move/move_basic/泛型',
-    'move/move_basic/类型能力',
-    'move/move_basic/use和alias',
-    'move/move_basic/friend',
-    'move/move_basic/包',
-    'move/move_basic/单元测试',
-    'move/move_basic/全局存储',
-    'move/move_basic/全局存储操作',
+    {
+      label: 'Move语法基础',
+      type: 'category',
+      items: [
+          'move/move_basic/模块与脚本',
+          'move/move_basic/第一个教程创建coins',
+          'move/move_basic/整数',
+          'move/move_basic/布尔类型',
+          'move/move_basic/地址',
+          'move/move_basic/动态数组',
+          'move/move_basic/签名者',
+          'move/move_basic/引用',
+          'move/move_basic/元组',
+          'move/move_basic/局部变量和作用域',
+          'move/move_basic/相等操作',
+          'move/move_basic/abort和assert',
+          'move/move_basic/条件',
+          'move/move_basic/循环',
+          'move/move_basic/函数',
+          'move/move_basic/结构体和资源',
+          'move/move_basic/常量',
+          'move/move_basic/泛型',
+          'move/move_basic/类型能力',
+          'move/move_basic/use和alias',
+          'move/move_basic/friend',
+          'move/move_basic/包',
+          'move/move_basic/单元测试',
+          'move/move_basic/全局存储',
+          'move/move_basic/全局存储操作',
+      ],
+    },
+
   ],
 };
 
